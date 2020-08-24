@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<link href="./style.css" type="text/css" rel="stylesheet" id="login_style">
+<body>
+	<header class="flex-header"></header>
+    
+    <main class="flex-main">
+        <nav class="flex-nav"></nav>
+        
+        <article class="flex-article">
+	        <form action="/login_page.js" method="post">
+				<div class="imgcontainer">
+				  <img src="logo.png" alt="Revature Logo" class="logo">
+				</div>
+				
+				<div class="container">
+				  <label for="login_username"><b>Username</b></label>
+				  <input type="text" id="login_username" placeholder="Enter Username" name="login_username" required>
+				
+				  <label for="login_pw"><b>Password</b></label>
+				  <input type="password" id="login_pw" placeholder="Enter Password" name="login_pw" required>
+				      
+				  <button type="submit" id="login_btn">Login</button>
+				</div>
+			</form>
+        </article>
+        
+    	<aside class="flex-aside"></aside>
+    </main>
+    
+    <footer class="flex-footer"></footer>	
+</body>
+</html>
