@@ -13,7 +13,7 @@ import com.revature.utils.ConnectionUtil;
 
 public class UserRolesDAO implements IUserRoleDAO {
 
-	private static final Logger log = LogManager.getLogger(UserDAO.class);
+	private static final Logger log = LogManager.getLogger(UserRolesDAO.class);
 	
 	@Override
 	public UserRoles findUserRoleByUserId(int userid) {

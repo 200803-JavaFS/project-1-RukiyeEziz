@@ -1,9 +1,10 @@
 package com.revature.models;
 
+
 import java.io.Serializable;
 import java.sql.Timestamp;
 
-public class Reimbursment implements Serializable{
+public class Reimbursement implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	//	reimb_id 				SERIAL PRIMARY KEY,
@@ -18,21 +19,28 @@ public class Reimbursment implements Serializable{
 	//	reimb_type_id_fk 		INTEGER NOT NULL REFERENCES ers_reimbursement_type(reimb_type_id)	
 	
 	private int reimbId;
-	private int reimbAmount;
-	private Timestamp reimbSubmitted;
-	private Timestamp reimbResolved;
+	private double reimbAmount;
+	private String reimbSubmitted;							// Timestamp reimbSubmitted;
+	private String reimbResolved;							// Timestamp reimbResolved;
 	private String reimbDescription;
 	private Byte reimbReceipt;
-	private Users users;
-	private ReimbStatus reimbStatus;
-	private ReimbType reimbType;
+	private int reimbAuthor;
+	private int reimbResolver;
+	private int reimbStatusId;
+	private int reimbTypeId;
 	
-	public Reimbursment() {
+//	private Byte reimbReceipt;
+//	private Users users;
+//	private ReimbStatus reimbStatus;
+//	private ReimbType reimbType;
+	
+	public Reimbursement() {
 		super();
 	}
 
-	public Reimbursment(int reimbId, int reimbAmount, Timestamp reimbSubmitted, Timestamp reimbResolved,
-			String reimbDescription, Byte reimbReceipt, Users users, ReimbStatus reimbStatus, ReimbType reimbType) {
+	public Reimbursement(int reimbId, double reimbAmount, String reimbSubmitted, String reimbResolved,
+			String reimbDescription, Byte reimbReceipt, int reimbAuthor, int reimbResolver, int reimbStatusId,
+			int reimbTypeId) {
 		super();
 		this.reimbId = reimbId;
 		this.reimbAmount = reimbAmount;
@@ -40,22 +48,24 @@ public class Reimbursment implements Serializable{
 		this.reimbResolved = reimbResolved;
 		this.reimbDescription = reimbDescription;
 		this.reimbReceipt = reimbReceipt;
-		this.users = users;
-		this.reimbStatus = reimbStatus;
-		this.reimbType = reimbType;
+		this.reimbAuthor = reimbAuthor;
+		this.reimbResolver = reimbResolver;
+		this.reimbStatusId = reimbStatusId;
+		this.reimbTypeId = reimbTypeId;
 	}
 
-	public Reimbursment(int reimbAmount, Timestamp reimbSubmitted, Timestamp reimbResolved, String reimbDescription,
-			Byte reimbReceipt, Users users, ReimbStatus reimbStatus, ReimbType reimbType) {
+	public Reimbursement(double reimbAmount, String reimbSubmitted, String reimbResolved, String reimbDescription,
+			Byte reimbReceipt, int reimbAuthor, int reimbResolver, int reimbStatusId, int reimbTypeId) {
 		super();
 		this.reimbAmount = reimbAmount;
 		this.reimbSubmitted = reimbSubmitted;
 		this.reimbResolved = reimbResolved;
 		this.reimbDescription = reimbDescription;
 		this.reimbReceipt = reimbReceipt;
-		this.users = users;
-		this.reimbStatus = reimbStatus;
-		this.reimbType = reimbType;
+		this.reimbAuthor = reimbAuthor;
+		this.reimbResolver = reimbResolver;
+		this.reimbStatusId = reimbStatusId;
+		this.reimbTypeId = reimbTypeId;
 	}
 
 	public int getReimbId() {
@@ -66,27 +76,27 @@ public class Reimbursment implements Serializable{
 		this.reimbId = reimbId;
 	}
 
-	public int getReimbAmount() {
+	public double getReimbAmount() {
 		return reimbAmount;
 	}
 
-	public void setReimbAmount(int reimbAmount) {
+	public void setReimbAmount(double reimbAmount) {
 		this.reimbAmount = reimbAmount;
 	}
 
-	public Timestamp getReimbSubmitted() {
+	public String getReimbSubmitted() {
 		return reimbSubmitted;
 	}
 
-	public void setReimbSubmitted(Timestamp reimbSubmitted) {
+	public void setReimbSubmitted(String reimbSubmitted) {
 		this.reimbSubmitted = reimbSubmitted;
 	}
 
-	public Timestamp getReimbResolved() {
+	public String getReimbResolved() {
 		return reimbResolved;
 	}
 
-	public void setReimbResolved(Timestamp reimbResolved) {
+	public void setReimbResolved(String reimbResolved) {
 		this.reimbResolved = reimbResolved;
 	}
 
@@ -106,43 +116,54 @@ public class Reimbursment implements Serializable{
 		this.reimbReceipt = reimbReceipt;
 	}
 
-	public Users getUsers() {
-		return users;
+	public int getReimbAuthor() {
+		return reimbAuthor;
 	}
 
-	public void setUsers(Users users) {
-		this.users = users;
+	public void setReimbAuthor(int reimbAuthor) {
+		this.reimbAuthor = reimbAuthor;
 	}
 
-	public ReimbStatus getReimbStatus() {
-		return reimbStatus;
+	public int getReimbResolver() {
+		return reimbResolver;
 	}
 
-	public void setReimbStatus(ReimbStatus reimbStatus) {
-		this.reimbStatus = reimbStatus;
+	public void setReimbResolver(int reimbResolver) {
+		this.reimbResolver = reimbResolver;
 	}
 
-	public ReimbType getReimbType() {
-		return reimbType;
+	public int getReimbStatusId() {
+		return reimbStatusId;
 	}
 
-	public void setReimbType(ReimbType reimbType) {
-		this.reimbType = reimbType;
+	public void setReimbStatusId(int reimbStatusId) {
+		this.reimbStatusId = reimbStatusId;
+	}
+
+	public int getReimbTypeId() {
+		return reimbTypeId;
+	}
+
+	public void setReimbTypeId(int reimbTypeId) {
+		this.reimbTypeId = reimbTypeId;
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + reimbAmount;
+		long temp;
+		temp = Double.doubleToLongBits(reimbAmount);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + reimbAuthor;
 		result = prime * result + ((reimbDescription == null) ? 0 : reimbDescription.hashCode());
 		result = prime * result + reimbId;
 		result = prime * result + ((reimbReceipt == null) ? 0 : reimbReceipt.hashCode());
 		result = prime * result + ((reimbResolved == null) ? 0 : reimbResolved.hashCode());
-		result = prime * result + ((reimbStatus == null) ? 0 : reimbStatus.hashCode());
+		result = prime * result + reimbResolver;
+		result = prime * result + reimbStatusId;
 		result = prime * result + ((reimbSubmitted == null) ? 0 : reimbSubmitted.hashCode());
-		result = prime * result + ((reimbType == null) ? 0 : reimbType.hashCode());
-		result = prime * result + ((users == null) ? 0 : users.hashCode());
+		result = prime * result + reimbTypeId;
 		return result;
 	}
 
@@ -154,8 +175,10 @@ public class Reimbursment implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Reimbursment other = (Reimbursment) obj;
-		if (reimbAmount != other.reimbAmount)
+		Reimbursement other = (Reimbursement) obj;
+		if (Double.doubleToLongBits(reimbAmount) != Double.doubleToLongBits(other.reimbAmount))
+			return false;
+		if (reimbAuthor != other.reimbAuthor)
 			return false;
 		if (reimbDescription == null) {
 			if (other.reimbDescription != null)
@@ -174,38 +197,28 @@ public class Reimbursment implements Serializable{
 				return false;
 		} else if (!reimbResolved.equals(other.reimbResolved))
 			return false;
-		if (reimbStatus == null) {
-			if (other.reimbStatus != null)
-				return false;
-		} else if (!reimbStatus.equals(other.reimbStatus))
+		if (reimbResolver != other.reimbResolver)
+			return false;
+		if (reimbStatusId != other.reimbStatusId)
 			return false;
 		if (reimbSubmitted == null) {
 			if (other.reimbSubmitted != null)
 				return false;
 		} else if (!reimbSubmitted.equals(other.reimbSubmitted))
 			return false;
-		if (reimbType == null) {
-			if (other.reimbType != null)
-				return false;
-		} else if (!reimbType.equals(other.reimbType))
-			return false;
-		if (users == null) {
-			if (other.users != null)
-				return false;
-		} else if (!users.equals(other.users))
+		if (reimbTypeId != other.reimbTypeId)
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "Reimbursment [reimbId=" + reimbId + ", reimbAmount=" + reimbAmount + ", reimbSubmitted="
+		return "Reimbursement [reimbId=" + reimbId + ", reimbAmount=" + reimbAmount + ", reimbSubmitted="
 				+ reimbSubmitted + ", reimbResolved=" + reimbResolved + ", reimbDescription=" + reimbDescription
-				+ ", reimbReceipt=" + reimbReceipt + ", users=" + users + ", reimbStatus=" + reimbStatus
-				+ ", reimbType=" + reimbType + "]";
+				+ ", reimbReceipt=" + reimbReceipt + ", reimbAuthor=" + reimbAuthor + ", reimbResolver=" + reimbResolver
+				+ ", reimbStatusId=" + reimbStatusId + ", reimbTypeId=" + reimbTypeId + "]";
 	}
-	
-	
+
 	
 	
 }

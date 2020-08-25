@@ -15,7 +15,7 @@ import com.revature.utils.ConnectionUtil;
 
 public class ReimbStatusDAO implements IReimbStatusDAO {
 
-	private static final Logger log = LogManager.getLogger(UserDAO.class);
+	private static final Logger log = LogManager.getLogger(ReimbStatusDAO.class);
 	
 	@Override
 	public List<ReimbStatus> findReimbStatusByUserId(int userid) {
