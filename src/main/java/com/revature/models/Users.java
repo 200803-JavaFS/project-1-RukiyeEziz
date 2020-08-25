@@ -19,14 +19,14 @@ public class Users implements Serializable{
 	private String firstName;
 	private String lastName;
 	private String email;
-	private UserRoles userRolesFK; // this FK and it links to UserRoles
+	private int userRolesFK; // this FK and it links to UserRoles   UserRoles
 	
 	public Users() {
 		super();
 	}
 
 	public Users(int usersId, String userName, String password, String firstName, String lastName, String email,
-			UserRoles userRolesFK) {
+			int userRolesFK) {
 		super();
 		this.usersId = usersId;
 		this.userName = userName;
@@ -38,7 +38,7 @@ public class Users implements Serializable{
 	}
 
 	public Users(String userName, String password, String firstName, String lastName, String email,
-			UserRoles userRolesFK) {
+			int userRolesFK) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -96,13 +96,14 @@ public class Users implements Serializable{
 		this.email = email;
 	}
 
-	public UserRoles getUserRolesFK() {
+	public int getUserRolesFK() {
 		return userRolesFK;
 	}
 
-	public void setUserRolesFK(UserRoles userRolesFK) {
+	public void setUserRolesFK(int userRolesFK) {
 		this.userRolesFK = userRolesFK;
 	}
+	
 
 	@Override
 	public int hashCode() {
@@ -113,7 +114,7 @@ public class Users implements Serializable{
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
-		result = prime * result + ((userRolesFK == null) ? 0 : userRolesFK.hashCode());
+		result = prime * result + userRolesFK;
 		result = prime * result + usersId;
 		return result;
 	}
@@ -152,10 +153,7 @@ public class Users implements Serializable{
 				return false;
 		} else if (!userName.equals(other.userName))
 			return false;
-		if (userRolesFK == null) {
-			if (other.userRolesFK != null)
-				return false;
-		} else if (!userRolesFK.equals(other.userRolesFK))
+		if (userRolesFK != other.userRolesFK)
 			return false;
 		if (usersId != other.usersId)
 			return false;

@@ -27,7 +27,7 @@ body {
   flex: 1 1 5rem; /*takes up the horizontal space*/
 }
 .flex-article {
-  background-color: #f1f1f1;
+  background-color: #f5f5f5; /* light grey*/
   padding-top: 3rem;
   flex: 3 3;
 }
@@ -41,8 +41,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
-form {border: solid #f1f1f1;}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -77,8 +75,8 @@ button:hover {
 }
 
 .container {
-  padding: 16px;
-  margin: 16px;
+  padding: 64px;
+  margin: 64px;
 }
 
 span.pw {
