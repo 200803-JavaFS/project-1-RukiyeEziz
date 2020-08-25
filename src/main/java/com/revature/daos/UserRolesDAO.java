@@ -32,7 +32,7 @@ public class UserRolesDAO implements IUserRoleDAO {
 				userRole.setUserRoleId(result.getInt("ers_user_role_id")); 
 				userRole.setUserRole(result.getString("ers_user_role"));
 				
-				log.info("UserDAO successfully found user role by user id from DB." + userid);
+				log.info("UserRolesDAO successfully found user role by user id from DB." + userid);
 				return userRole;
 			} else {
 				return null;
@@ -40,8 +40,13 @@ public class UserRolesDAO implements IUserRoleDAO {
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
-		log.info("UserDAO could not find user role by user id from DB." + userid);
+		log.info("UserRolesDAO could not find user role by user id from DB." + userid);
 		return null;
 	}
 
 }
+
+/* example user id = 2
+
+	2(user id)	Aki	 Aki	Aki	 Tartamella	akitartamella@gmail.com		2	2	Employee
+*/
