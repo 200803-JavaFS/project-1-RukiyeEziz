@@ -48,6 +48,13 @@ public class Users implements Serializable{
 		this.userRolesFK = userRolesFK;
 	}
 
+	public Users(int usersId, String userName, String password) {
+		super();
+		this.usersId = usersId;
+		this.userName = userName;
+		this.password = password;
+	}
+
 	public int getUsersId() {
 		return usersId;
 	}

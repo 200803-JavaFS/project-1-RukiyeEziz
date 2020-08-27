@@ -1,0 +1,38 @@
+2020-08-26 04:46:03 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 04:46:04 INFO  UserDAO:50 - UserDAO could not find user name and pw from DB.
+2020-08-26 04:50:51 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 04:50:52 INFO  UserDAO:50 - UserDAO could not find user name and pw from DB.
+2020-08-26 04:57:42 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 04:57:43 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 04:58:49 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 04:58:50 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 05:01:13 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 05:01:14 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 05:02:12 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 05:02:12 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 05:05:25 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 05:05:26 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 05:10:51 INFO  UserService:24 - In UserService looking for user name and pw ... null
+2020-08-26 05:10:52 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 09:51:38 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-08-26 09:51:39 INFO  UserDAO:58 - UserDAO could not find user name and pw from DB.
+2020-08-26 22:26:52 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-08-26 22:26:53 INFO  UserDAO:148 - UserDAO could not find user name and pw from DB.
+2020-08-26 22:28:53 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-08-26 22:28:54 INFO  UserDAO:148 - UserDAO could not find user name and pw from DB.
+2020-08-26 22:34:29 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-26 22:34:30 INFO  UserDAO:140 - UserDAO found user and pw info from DB: Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com, userRolesFK=2]
+2020-08-26 22:34:30 INFO  LoginService:22 - Login Service loginAkiAki
+2020-08-26 22:34:30 INFO  LoginService:26 - LoginService successfully processed. User Logged in.
+2020-08-26 22:34:30 INFO  UserService:29 - In UserService find the user by user name.
+2020-08-26 22:34:30 INFO  UserDAO:107 - UserDAO could not find user by user name from DB.Aki
+2020-08-26 22:43:47 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-26 22:43:47 INFO  UserDAO:144 - UserDAO found user and pw info from DB: Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com, userRolesFK=2]
+2020-08-26 22:43:47 INFO  LoginService:22 - Login Service loginAkiAki
+2020-08-26 22:43:47 INFO  LoginService:26 - LoginService successfully processed. User Logged in.
+2020-08-26 22:43:47 INFO  UserService:29 - In UserService find the user by user name.
+2020-08-26 22:43:48 INFO  UserDAO:102 - UserDAO successfully found user by user name from DB.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com, userRolesFK=2]
+2020-08-26 22:43:48 INFO  UserRoleService:17 - UserRoleService tying to found user role by user id from DB.2
+2020-08-26 22:43:48 INFO  UserRolesDAO:36 - UserRolesDAO successfully found user role by user id from DB.2
+2020-08-26 22:46:19 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-08-26 22:46:20 INFO  UserDAO:152 - UserDAO could not find user name and pw from DB.

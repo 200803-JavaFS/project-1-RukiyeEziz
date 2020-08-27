@@ -11,7 +11,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.revature.models.UserRoles;
 import com.revature.models.Users;
 import com.revature.utils.ConnectionUtil;
 
@@ -80,6 +79,79 @@ public class UserDAO implements IUserDAO {
 		return null;
 	}
 	
+	@Override
+	public Users findByUsername(String username) {
+		try (Connection conn = ConnectionUtil.getConnection()) {
+			
+			String sql = "SELECT * FROM ers_users WHERE ers_username = ? ;";
+			
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, username);
+			ResultSet result = statement.executeQuery();
+			
+			if (result.next()) {
+				Users user = new Users();
+				user.setUsersId(result.getInt("ers_users_id"));				// PK
+				user.setUserName(result.getString("ers_username"));
+				user.setPassword(result.getString("ers_password"));
+				user.setFirstName(result.getString("user_first_name"));
+				user.setLastName(result.getString("user_last_name"));
+				user.setEmail(result.getString("user_email"));
+				user.setUserRolesFK(result.getInt("user_role_id_fk"));		// FK
+				
+				log.info("UserDAO successfully found user by user name from DB." + user);
+				return user;
+				
+			} else {
+				return null;
+			}
+		} catch(SQLException e) {
+			e.printStackTrace();
+		}
+		log.info("UserDAO could not find user by user name from DB." + username);
+		return null;
+	}
+
+	/// this is for login check ????
+	@Override
+	public Users findUserByNamePW(String username, String password) {
+		
+		try(Connection conn = ConnectionUtil.getConnection()){
+			String sql = "SELECT * FROM ers_users WHERE ers_username = ? and ers_password = ?;";
+			
+			PreparedStatement statement = conn.prepareStatement(sql);
+			
+			statement.setString(1, username);
+			statement.setString(2, password);
+			
+			ResultSet result = statement.executeQuery();
+			if(result.next()) {
+
+				Users user = new Users();
+//						result.getInt("ers_users_id"),
+//						result.getString("ers_username"),
+//						result.getString("ers_password"));
+//						//result.getString("user_type"));
+						
+				user.setUsersId(result.getInt("ers_users_id"));				// PK
+				user.setUserName(result.getString("ers_username"));
+				user.setPassword(result.getString("ers_password"));
+				user.setFirstName(result.getString("user_first_name"));
+				user.setLastName(result.getString("user_last_name"));
+				user.setEmail(result.getString("user_email"));
+				user.setUserRolesFK(result.getInt("user_role_id_fk"));		// FK
+		
+				log.info("UserDAO found user and pw info from DB: " + user);
+				
+				return user;
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		log.info("UserDAO could not find user name and pw from DB.");
+		return null;
+	}
 	/*
 	 * @Override public Users findUserByIdPW(int userid, String password) {
 	 * 
@@ -184,6 +256,8 @@ public class UserDAO implements IUserDAO {
 		log.info("UserDAO could not update user from DB.");
 		return false;
 	}
+
+
 
 
 

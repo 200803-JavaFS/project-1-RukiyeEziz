@@ -23,6 +23,7 @@ public class UserRolesDAO implements IUserRoleDAO {
 					+ "JOIN ers_user_roles "
 					+ "ON ers_users.user_role_id_fk = ers_user_roles.ers_user_role_id "
 					+ "WHERE ers_users.ers_users_id =" + userid + ";";
+			
 			Statement statement = conn.createStatement();
 			ResultSet result = statement.executeQuery(sql);
 			
@@ -37,9 +38,11 @@ public class UserRolesDAO implements IUserRoleDAO {
 			} else {
 				return null;
 			}
+			
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
+		
 		log.info("UserRolesDAO could not find user role by user id from DB." + userid);
 		return null;
 	}

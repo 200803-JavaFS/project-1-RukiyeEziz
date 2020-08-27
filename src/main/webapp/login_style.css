@@ -63,6 +63,10 @@ input[type=text], input[type=password] {
   opacity: 0.8;
 }
 
+#login_warning{
+	color: red;
+	font-size:12px;
+}
 .img_container {
   text-align: center;
   margin: 32px 0 32px 0;

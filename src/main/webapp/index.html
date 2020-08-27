@@ -13,7 +13,8 @@
         <nav class="flex-aside-left"></nav>
         
         <article class="flex-article">
-	        <form action="/login_page.js" method="post">
+        
+	        <form action="login" method="post">
 				<div class="img_container">
 				  <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo">
 				</div>
@@ -25,8 +26,11 @@
 				  <label for="login_pw"><b>Password</b></label>
 				  <input type="password" id="login_pw" placeholder="Enter Password" name="login_pw" required>
 				      
-				  <button type="submit" id="login_btn">Login</button>
+				  <input type="submit" id="login_btn" name="login_btn">Login</input>
+				 
+				 <div id="login_warning"> <p>** Invalid user name and/or password. Re-enter again.</p></div>
 				</div>
+				
 			</form>
         </article>
         
@@ -34,5 +38,6 @@
     </main>
     
     <footer class="flex-footer"></footer>	
+    <script src="login.js"></script>
 </body>
 </html>

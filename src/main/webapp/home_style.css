@@ -131,6 +131,7 @@ span.pw {
 
 table{
 	border: 1px solid #d8dde6;
+	
 }
 
 .table_name{
@@ -138,6 +139,5 @@ table{
 	text-align: center;
 	background-color: #006080;		/* navy */
 	color: #ffffff;
-	font-weight: bold;
-	
+	font-weight: bold;	
 }

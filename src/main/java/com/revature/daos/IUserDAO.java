@@ -6,11 +6,15 @@ import com.revature.models.Users;
 
 public interface IUserDAO {
 	
+	// login check ???????????
+	public Users findUserByNamePW(String username, String password); 
+	/////////////////////
+	
 	public List<Users> findAllUser();
 	
 	public Users findUserById(int userid);
 	
-	/* public Users findUserByIdPW(int userid, String password); */
+	public Users findByUsername(String username);
 	
 	/* public List<String> findUserRoleByUserId(int userid); */
 	
