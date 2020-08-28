@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
-<link href="./login_style.css" type="text/css" rel="stylesheet" id="login_style">
+<link href="./login.css" type="text/css" rel="stylesheet" id="login_style">
 </head>
 
 <body>
@@ -16,7 +16,8 @@
         
 	        <form action="login" method="post">
 				<div class="img_container">
-				  <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo">
+				  <!-- <img src="../../../../imgs/logo.png" alt="Revature Logo" class="logo"> -->
+				  <img src="./logo.png" alt="Revature Logo" class="logo">
 				</div>
 				
 				<div class="input_container">
@@ -26,9 +27,9 @@
 				  <label for="login_pw"><b>Password</b></label>
 				  <input type="password" id="login_pw" placeholder="Enter Password" name="login_pw" required>
 				      
-				  <input type="submit" id="login_btn" name="login_btn">Login</input>
+				  <input type="submit" id="login_btn" name="login_btn"></input>
 				 
-				 <div id="login_warning"> <p>** Invalid user name and/or password. Re-enter again.</p></div>
+				 <div id="login_warning"></div>					<!-- ** Invalid user name and/or password. Re-enter again. -->
 				</div>
 				
 			</form>

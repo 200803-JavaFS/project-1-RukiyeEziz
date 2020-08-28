@@ -32,7 +32,7 @@ body {
   background-color: #f5f5f5; /* light grey*/
   padding-top: 3rem;
   padding:3rem;
-
+  
 }
 .flex-aside-right {
   border: 1px solid #d8dde6;
@@ -58,19 +58,6 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-/* #logout_btn {
-  background-color: #f26925;		orange
-  color: white;
-  padding: 14px 20px;
-  margin: 16px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-#logout_btn:hover {
-  opacity: 0.8;
-} */
 
 .img_container {
   text-align: center;
@@ -134,7 +121,7 @@ table{
 	
 }
 
-.table_name{
+.table_name_div{
 	padding: 1rem;
 	text-align: center;
 	background-color: #006080;		/* navy */

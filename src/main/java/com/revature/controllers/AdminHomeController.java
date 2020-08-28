@@ -1,5 +1,5 @@
 package com.revature.controllers;
 
-public class HomeController {
+public class AdminHomeController {
 
 }

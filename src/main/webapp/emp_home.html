@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employee Home</title>
+	<link href="./emp_home.css" type="text/css" rel="stylesheet" id="emp_home">
+		
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<!-- header navigation -->
+	<header class="flex-header">
+		<div class="topnav" id="myTopnav">
+			<!-- <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo"> -->
+			<img src="./logo.png" alt="Revature Logo" class="logo">
+			<a href="#home" class="active" id="home_btn">HOME</a>
+			<a href="#timesheet" id="timesheet_btn">TIMESHEET</a>
+			<a href="#reimb" id="reimb_btn">EXPENSE REIMBURSEMENT</a>
+			<a href="#help" id="help_btn">HELP</a>			
+			<div class="logout">
+				<a>
+					<span class="profile_name">RUKIYE</span>	
+					<a id="logout_btn">LOGOUT</a>
+				</a>
+			</div>
+		</div>		
+	</header>
+	
+	<!-- main -->
+	<div class="flex-main" id="flex-main">		
+		<!-- left (static)-->
+		<article class="flex-aside-left">			
+			<div class="table_name_div">Timesheets</div>
+			<div class="timesheet_table">
+				<table class="table table-striped">		 
+					<tbody>
+						<tr>
+							<td>08/15/20 to 08/21/20</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>08/08/20 to 08/14/20</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>08/01/20 to 08/07/20</td>
+							<td>--></td>
+						</tr>	
+							  
+					</tbody>
+				</table>
+			</div>
+			
+		</article>
+		
+		<!-- middle -->
+		<article class="flex-article">
+			<div class="table_name_div">Expense Reimbursements</div>	
+			<div class="remib_table">
+				<table class="table table-striped " id="home_reimb_table">		 
+					<tbody>
+						<tr>
+							<td>EXP-00031168</td>
+							<td>$250.00</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>EXP-00030670</td>
+							<td>$250.00</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>EXP-00030670</td>
+							<td>$250.00</td>
+							<td>--></td>
+						</tr>	
+						
+						  
+					</tbody>
+				</table>
+			</div>		
+										
+		</article>
+		
+		<!-- right (static)-->
+		<article class="flex-aside-right">		
+			<div class="table_name_div">Announcements</div>
+			<div class="announcement_table">
+				<table class="table table-striped">		 
+					<tbody>
+						<tr>
+							<td>Payroll Calendar</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>Employee Blog Update</td>
+							<td>--></td>
+						</tr>
+						<tr>
+							<td>PTO and Holiday Pay For Employee</td>
+							<td>--></td>
+						</tr>		  
+					</tbody>
+				</table>
+			</div>
+			
+		</article>
+	</div><!-- end of flex-main -->
+	
+	<!-- footer -->
+	<footer class="flex-footer">
+		CONTACT US: HR@revature.com
+	</footer>	
+	<script src="home.js"></script>
+</body>
+</html>

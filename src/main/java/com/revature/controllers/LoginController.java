@@ -134,6 +134,19 @@ public class LoginController extends HttpServlet{
 //				find user role by user id or whatever
 //				depend on the user role maybe 2 different html or one for now?
 				
+				if (userRole.getUserRole().equals("Employee")) {	
+					
+					req.getRequestDispatcher("emp_home.html").forward(req,res);
+					
+					System.out.println("Employee Home page Loaded.");
+					
+				} else if (userRole.getUserRole().equals("Manager")) {
+					
+					req.getRequestDispatcher("admin_home.html").forward(req,res);
+					
+					System.out.println("Admin Home page Loaded.");
+				}
+				
 			}
 			else {
 				HttpSession session = req.getSession(false);

@@ -2,9 +2,6 @@ package com.revature.web;
 
 import javax.servlet.http.HttpServlet;
 
-public class HomeServlet extends HttpServlet {
-	
-	
-	
+public class AdminHomeServlet extends HttpServlet {
 
 }
