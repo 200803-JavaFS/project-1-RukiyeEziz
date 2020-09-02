@@ -2,7 +2,9 @@ package com.revature.daos;
 
 import java.util.List;
 
+import com.revature.models.ReimbStatus;
 import com.revature.models.Reimbursement;
+import com.revature.models.Users;
 
 public interface IReimbursementDAO {
 	
@@ -14,8 +16,8 @@ public interface IReimbursementDAO {
 	
 	public boolean updateReimbursement(Reimbursement reimb);
 
-	public List<Reimbursement> findReimbursementByStatus(String status);
+	public List<Reimbursement> findReimbursementByStatus(ReimbStatus reimbStatus);
 	
-	public List<Reimbursement> findReimbursementByUserId(int userid);
+	public List<Reimbursement> findReimbursementByUserId(Users user);
 
 }

@@ -5,9 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Employee Home</title>
 	<link href="./emp_home.css" type="text/css" rel="stylesheet" id="emp_home">
-		
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->	
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
 </head>
 <body>
@@ -23,7 +25,7 @@
 			<div class="logout">
 				<a>
 					<span class="profile_name">RUKIYE</span>	
-					<a id="logout_btn">LOGOUT</a>
+					<a href="#home" id="logout_btn">LOGOUT</a>
 				</a>
 			</div>
 		</div>		
@@ -35,7 +37,8 @@
 		<article class="flex-aside-left">			
 			<div class="table_name_div">Timesheets</div>
 			<div class="timesheet_table">
-				<table class="table table-striped">		 
+				<table class="table table-striped">	
+	 
 					<tbody>
 						<tr>
 							<td>08/15/20 to 08/21/20</td>
@@ -58,27 +61,22 @@
 		
 		<!-- middle -->
 		<article class="flex-article">
-			<div class="table_name_div">Expense Reimbursements</div>	
+			<div class="table_name_div">User Information for now</div>	
 			<div class="remib_table">
-				<table class="table table-striped " id="home_reimb_table">		 
-					<tbody>
-						<tr>
-							<td>EXP-00031168</td>
-							<td>$250.00</td>
-							<td>--></td>
-						</tr>
-						<tr>
-							<td>EXP-00030670</td>
-							<td>$250.00</td>
-							<td>--></td>
-						</tr>
-						<tr>
-							<td>EXP-00030670</td>
-							<td>$250.00</td>
-							<td>--></td>
-						</tr>	
-						
-						  
+				<table class="table table-striped " id="home_reimb_table">
+					<thead>
+	                    <tr>
+	                        <th>User ID</th>
+	                        <th>User Name</th>
+	                        <th>Password</th>
+	                        <th>First Name</th>
+	                        <th>Last Name</th>
+	                        <th>Email</th>
+	                        <th>User Role</th>
+	                    </tr>
+                	</thead>		 
+					<tbody id="userinfo_tbody">
+  
 					</tbody>
 				</table>
 			</div>		
@@ -114,6 +112,11 @@
 	<footer class="flex-footer">
 		CONTACT US: HR@revature.com
 	</footer>	
-	<script src="home.js"></script>
+	
+	<script src="emp_home.js"></script>
+	<script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 </body>
 </html>

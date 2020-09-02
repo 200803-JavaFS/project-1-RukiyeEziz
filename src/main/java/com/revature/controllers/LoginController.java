@@ -21,97 +21,105 @@ import com.revature.services.UserService;
 
 public class LoginController extends HttpServlet{
 	
-	private static final long serialVersionUID = 1L;
 	private static LoginService loginService = new LoginService();
 	private static ObjectMapper objectMapper = new ObjectMapper();
+	
 	private static UserService userService = new UserService();
 	private static UserRoleService userRoleService = new UserRoleService();
 	
-	
-	RequestDispatcher rd = null;
-	
 	public void login(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		LoginDTO loginDto = new LoginDTO();
 		
+		System.out.println("In LoginController request: " + req.getParameterMap().containsKey("username"));
+		
+		LoginDTO loginDto = new LoginDTO();	
+		
+		// getting info from index.html
 		String userName = req.getParameter("login_username");
 		String password = req.getParameter("login_pw");
 		
 		loginDto.username = userName;
 		loginDto.password = password;
 		
-		//loginDto.setUsername(userName);
-		//loginDto.setPassword(password);
-		
-		System.out.println("login controller loginDTO info for  " + loginDto.username + " " + loginDto.password);
-		
-//		 if(req.getMethod().equals("POST")){
-//			 
-//			 Users user = new Users();
-//			 user.setUserName(req.getParameter("login_username"));
-//			 user.setPassword(req.getParameter("login_pw"));
-//			 
-//			 System.out.println("Login controller login method user " + user);
-//			 
-//			 RequestDispatcher rd = null;
-//			 PrintWriter out = res.getWriter();
-//		 
-//		 }
+		System.out.println("In LoginController loginDTO info for  " + loginDto.username + " " + loginDto.password);
+		System.out.println("In LoginController request: " + req.getContentType() );// .getParameterMap().containsKey("username"));
+
 		RequestDispatcher rd = null;
-		PrintWriter out = res.getWriter();
+		//PrintWriter out = res.getWriter();		
 		
-		
-		if(req.getMethod().equals("GET")) {
+		if(req.getMethod().equals("GET")) {		// GET
+			
 			
 			if(loginService.login(loginDto)) {
 				
 				HttpSession ses = req.getSession();
-				ses.setAttribute("user", loginDto);
+				
+				ses.setAttribute("user", loginDto);				
 				ses.setAttribute("loggedin", true);
-				res.setStatus(200);
+				
+				res.setStatus(200);				
 				res.getWriter().println("Login Controller GET - Login Successful");
 				
 			} else {
 				
 				HttpSession ses = req.getSession(false);
+				
 				if(ses != null) {
+					
 					ses.invalidate();
 				}
-				res.setStatus(401);
-				res.getWriter().println("Login Controller - Login failed");
+				
+				res.setStatus(401);				
+				res.getWriter().println("Login Controller GET - Login failed");
 			}
+			
 		}
-		else if(req.getMethod().equals("POST")) { // i omitted if for GET method
+		else if(req.getMethod().equals("POST")) { 		// POST		what if i omitted GET method
 			
 			BufferedReader reader = req.getReader();
 			StringBuilder stringBuilder = new StringBuilder();
 			String line = reader.readLine();
 			
 			while (line != null) {
+				
 				stringBuilder.append(line);
 				line=reader.readLine();
 			}
 			
 			String body = new String(stringBuilder);
-			System.out.println("body: "+ body);
+			System.out.println("In LoginController POST req body: " + body);
 			
-//			LoginDTO loginDto = objectMapper.readValue(body, LoginDTO.class);
+			loginDto = objectMapper.readValue(body, LoginDTO.class);
+			
+			//Users user = objectMapper.readValue(body, Users.class);
+			System.out.println("In LoginController object mapper: " + loginDto.toString());
 			
 			if(loginService.login(loginDto)) {
 				
 				HttpSession session = req.getSession();
-				System.out.println("Login Controller POST- You logged in, success!");
+				System.out.println("Login Controller POST session - You logged in, success!" + session);
 				
 				session.setAttribute("user", loginDto);
 				session.setAttribute("loggedin", true);
 				
+				System.out.println("Login Controller after setAttribute session - You logged in, success!" + session);
+				
 				res.setStatus(200);
 				res.getWriter().println("Login Controller POST- Login Successful");
 				
+//				if(res.getStatus() == 200) {
+//					System.out.println("do something??");
+//					rd = req.getRequestDispatcher("takemehome");
+//					rd.forward(req, res);
+//					
+//				}
 
-				res.setContentType("text/html");
+
+				//res.setContentType("text/html");
 				
-				Users user = userService.findUserByUsername(userName) ;
-				UserRoles userRole = userRoleService.findUserRoleByUserId(user.getUsersId());
+//				Users user = userService.findUserByUsername(userName) ;
+//				System.out.println(user);
+//				UserRoles userRole = userRoleService.findUserRoleByUserId(user.getUsersId());
+//				System.out.println(userRole);
 				
 				// what should i do???????????
 				
@@ -134,18 +142,20 @@ public class LoginController extends HttpServlet{
 //				find user role by user id or whatever
 //				depend on the user role maybe 2 different html or one for now?
 				
-				if (userRole.getUserRole().equals("Employee")) {	
-					
-					req.getRequestDispatcher("emp_home.html").forward(req,res);
-					
-					System.out.println("Employee Home page Loaded.");
-					
-				} else if (userRole.getUserRole().equals("Manager")) {
-					
-					req.getRequestDispatcher("admin_home.html").forward(req,res);
-					
-					System.out.println("Admin Home page Loaded.");
-				}
+				
+//				if (userRole.getUserRole().equals("Employee")) {	
+//					
+//					req.getRequestDispatcher("emp_home.html").forward(req,res);
+//					
+//					System.out.println("Employee Home page Loaded.");
+//					
+//				} else if (userRole.getUserRole().equals("Manager")) {
+//					
+//					req.getRequestDispatcher("admin_home.html").forward(req,res);
+//					
+//					System.out.println("Admin Home page Loaded.");
+//				}
+				
 				
 			}
 			else {
@@ -176,6 +186,7 @@ public class LoginController extends HttpServlet{
 			
 			res.setStatus(200);
 			res.getWriter().println(loginDto.username + " has logged out successfully");
+			System.out.println("Login Controller logout - logged out success! " + loginDto);
 			
 		}else {
 			res.setStatus(401);

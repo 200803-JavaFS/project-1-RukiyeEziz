@@ -9,21 +9,20 @@ import com.revature.models.Users;
 
 // AKA UserService = LoginService
 public class LoginService {
+	
 	private static final Logger log = LogManager.getLogger(LoginService.class);
+	
 	private static UserService userService = new UserService();
 	
-	private static UserService us = new UserService();
-	
 	public boolean login(LoginDTO loginDto) {
-		
-		
+				
 		Users user = userService.findUserByNamePW(loginDto.username, loginDto.password);
 		
 		log.info("Login Service login" + user.getUserName() + user.getPassword());
 		
 		if(loginDto.username.equals(user.getUserName()) && loginDto.password.equals(user.getPassword())) {
 			
-			log.info("LoginService successfully processed. User Logged in.");
+			log.info("LoginService successfully processed. User Logged in." + user);
 			return true;
 		}
 		

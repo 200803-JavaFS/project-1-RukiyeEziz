@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+		<!-- JDBC config -->
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">password</property>
+		
+		<!-- i am using database "project1"  -->
+		<property name="hibernate.connection.url">jdbc:postgresql://javafs200803.cm9sjkiaoymd.us-east-2.rds.amazonaws.com/project1</property>
+		
+		<!-- got it from ConnectionUtil.java -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>	
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		
+		<!-- These will print the sql queries hibernate makes to the console and format them-->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">validate</property>   <!-- change it after make sure everything created -->
+		
+		
+		<mapping class="com.revature.models.Users"/>
+		<mapping class="com.revature.models.UserRoles"/>
+		<mapping class="com.revature.models.Reimbursement"/>
+		<mapping class="com.revature.models.ReimbStatus"/>
+		<mapping class="com.revature.models.ReimbType"/>
+		
+	
+	</session-factory>
+</hibernate-configuration>

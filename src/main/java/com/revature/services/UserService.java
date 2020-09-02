@@ -26,13 +26,24 @@ public class UserService {
 	}
 	
 	public Users findUserByUsername(String username) {
-		log.info("In UserService find the user by user name.");
+		log.info("In UserService looking for user by user name. " + username);
 		return userDao.findByUsername(username);
 	}
 	
+	public Users findUserByUserId(int userid) {
+		log.info("In UserService looking user by user id. " + userid);
+		return userDao.findUserById(userid);
+	}
 	
+	public boolean addUser(Users user) {
+		log.info("In UserService adding the user. " + user);
+		return userDao.addUser(user);
+	}
 	
-	
+	public boolean updateUser(Users user) {
+		log.info("In UserService updating the user. " + user);
+		return userDao.updateUser(user);
+	}
 	
 	
 }

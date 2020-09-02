@@ -60,3 +60,687 @@
 2020-08-28 00:24:30 INFO  UserDAO:102 - UserDAO successfully found user by user name from DB.Users [usersId=1, userName=Ruki, password=Ruki, firstName=Rukiye, lastName=Eziz, email=rukiye.eziz@revature.net, userRolesFK=1]
 2020-08-28 00:24:30 INFO  UserRoleService:17 - UserRoleService tying to found user role by user id from DB.1
 2020-08-28 00:24:30 INFO  UserRolesDAO:36 - UserRolesDAO successfully found user role by user id from DB.1
+2020-08-30 01:54:06 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 01:58:40 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 01:58:40 INFO  UserDAO:37 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:00:51 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:00:51 INFO  UserDAO:37 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:19:17 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:19:17 INFO  UserDAO:37 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:21:40 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:21:40 INFO  UserDAO:37 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:27:09 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:27:09 INFO  UserDAO:37 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:29:00 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:29:00 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:33:10 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:33:10 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:42:12 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:42:12 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:45:03 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:45:03 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:50:21 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:50:21 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:54:53 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:54:53 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:54:58 INFO  UserDAO:43 - User Dao return User Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-08-30 02:54:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-08-30 02:54:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.
+2020-08-30 02:54:58 INFO  UserService:29 - In UserService find the user by user name. Aki
+2020-08-30 02:57:06 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 02:57:06 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 02:57:11 INFO  UserDAO:43 - User Dao return User Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-08-30 02:57:11 INFO  LoginService:21 - Login Service loginAkiAki
+2020-08-30 02:57:11 INFO  LoginService:25 - LoginService successfully processed. User Logged in.
+2020-08-30 02:57:11 INFO  UserService:29 - In UserService find the user by user name. Aki
+2020-08-30 02:57:11 INFO  UserRoleService:22 - UserRoleService tying to found user role by user id from DB.2
+2020-08-30 13:17:02 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 13:17:02 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 13:23:03 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 13:23:03 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 13:24:22 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 13:24:22 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 13:25:27 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 13:25:28 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-30 15:20:00 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-30 15:20:00 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-31 12:27:33 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-31 12:27:33 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-31 12:29:18 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-31 12:29:18 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-31 12:30:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-08-31 12:30:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-08-31 12:30:52 INFO  UserDAO:43 - User Dao return User Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-08-31 12:30:52 INFO  LoginService:21 - Login Service loginAkiAki
+2020-08-31 12:30:52 INFO  LoginService:25 - LoginService successfully processed. User Logged in.
+2020-08-31 12:30:52 INFO  UserService:29 - In UserService find the user by user name. Aki
+2020-08-31 12:30:52 INFO  UserDAO:60 - Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-08-31 12:30:52 INFO  UserRoleService:22 - UserRoleService tying to found user role by user id from DB.2
+2020-09-01 01:19:28 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 01:19:28 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 01:19:33 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 01:19:33 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 01:19:33 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 01:41:35 INFO  UserService:24 - In UserService looking for user name and pw ... Akiasdf
+2020-09-01 01:41:35 INFO  UserDAO:39 - UserDao looking for user name and pw ... Akiasdf
+2020-09-01 01:42:16 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 01:42:16 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 01:42:16 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 01:42:16 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 01:42:16 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 01:46:47 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 01:46:47 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 01:50:31 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 01:50:31 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 02:01:56 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 02:01:56 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 02:02:01 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 02:02:01 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 02:02:01 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:17:17 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 10:17:17 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 10:17:22 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:17:22 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 10:17:22 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:18:19 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 10:18:19 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 10:18:19 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:18:19 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 10:18:19 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:19:10 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 10:19:10 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 10:19:10 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 10:19:10 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 10:19:10 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 12:25:43 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 12:25:43 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 12:25:49 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 12:25:49 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 12:25:49 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:11:41 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:11:41 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:11:46 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:11:46 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:11:46 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:14:34 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:14:34 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:14:34 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:14:34 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:14:34 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:14:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:14:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:14:48 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:15:52 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 14:15:52 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 14:16:28 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:16:28 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:16:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:17:53 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:17:53 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:17:58 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:17:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:17:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:18:07 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:18:07 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:18:07 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:26:15 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:26:15 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:26:20 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:26:20 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:26:20 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:29:13 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:29:13 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:29:18 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:29:18 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:29:18 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:29:18 INFO  UserService:29 - In UserService looking for user by user name. null
+2020-09-01 14:31:35 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 14:31:35 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 14:31:35 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:31:35 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 14:31:35 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 14:31:35 INFO  UserService:29 - In UserService looking for user by user name. null
+2020-09-01 15:09:01 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 15:09:01 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 15:09:06 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:09:06 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 15:09:06 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:11:47 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 15:11:47 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 15:11:47 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:11:47 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 15:11:47 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:14:13 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 15:14:13 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 15:14:14 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:14:14 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 15:14:14 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:18:19 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 15:18:19 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 15:18:24 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:18:24 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 15:18:24 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 15:31:38 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 15:31:38 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 16:07:14 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 16:07:14 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 16:07:19 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 16:07:19 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 16:07:19 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 16:10:12 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 16:10:12 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 16:10:12 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 16:10:12 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 16:10:12 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 16:10:24 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 16:10:24 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:16:07 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:16:07 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:16:12 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:16:12 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:16:12 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:22:09 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:22:09 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:22:09 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:22:09 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:22:09 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:29:40 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:29:40 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:29:40 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:29:40 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:29:40 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:30:15 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:30:15 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:30:15 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:30:15 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:30:15 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:31:57 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:31:57 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:31:57 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:31:57 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:31:57 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:33:59 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:33:59 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:33:59 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:33:59 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:33:59 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:34:44 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:34:44 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:34:45 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:34:45 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:34:45 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:36:29 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:36:30 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:36:34 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:36:34 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:36:34 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:36:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:36:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:36:48 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:36:48 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:36:48 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:37:22 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 17:37:22 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 17:37:32 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:37:32 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:37:32 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:37:32 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:37:32 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:42:52 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:42:52 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:42:58 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:42:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:42:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:46:02 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 17:46:02 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 17:46:02 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 17:46:02 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 17:46:02 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:07 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:37:07 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:37:11 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:11 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:37:11 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:11 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:37:11 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:59 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:37:59 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:37:59 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:59 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:37:59 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:37:59 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:37:59 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:39:37 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:39:37 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:39:41 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:39:41 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:39:41 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:39:41 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:39:41 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:40:30 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:40:30 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:40:35 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:40:35 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:40:35 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:40:35 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:40:35 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:41:55 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:41:55 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:41:59 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:41:59 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:41:59 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:41:59 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:41:59 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:43:00 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:43:00 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:43:00 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:43:00 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:43:00 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:43:27 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:43:27 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:43:27 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:43:27 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:43:27 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:44:35 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 18:44:36 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:45:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:45:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:45:53 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:45:53 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:45:53 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:46:50 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:46:50 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:46:50 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:46:50 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:46:50 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:54:00 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:54:00 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:54:05 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:54:05 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:54:05 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:56:17 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:56:17 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:56:22 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:56:22 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:56:22 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:57:45 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 18:57:45 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 18:57:50 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 18:57:50 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 18:57:50 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:00:19 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:00:19 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:00:24 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:00:24 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:00:24 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:04:04 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:04:04 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:04:09 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:04:09 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:04:09 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:07:16 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:07:16 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:07:21 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:07:21 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:07:21 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:18:07 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:18:07 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:18:12 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:18:12 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:18:12 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:18:12 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:18:12 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:36:53 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:36:53 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:36:58 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:36:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:36:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:36:58 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:36:58 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:41:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:41:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:41:53 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:41:53 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:41:53 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:41:53 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:41:53 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:43:11 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:43:11 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:43:15 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:43:15 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:43:15 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:43:15 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:43:15 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:47:51 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:47:51 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:47:56 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:47:56 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:47:56 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:47:56 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:47:56 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:49:03 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:49:03 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:49:08 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:49:08 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:49:08 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:50:14 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:50:14 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:50:19 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:50:19 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:50:19 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:50:19 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:50:19 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:51:16 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:51:16 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:51:21 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:51:21 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:51:21 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:51:21 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:51:21 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:54:39 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:54:39 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:54:43 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:54:43 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:54:43 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:54:43 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:54:43 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:56:12 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 19:56:12 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 19:56:16 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:56:16 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 19:56:16 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 19:56:16 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 19:56:16 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:01:23 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:01:23 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:01:27 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:01:27 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:01:27 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:01:27 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:01:27 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:02:23 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:02:23 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:02:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:02:28 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:02:28 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:02:28 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:02:28 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:07:19 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:07:19 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:07:19 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:07:19 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:07:19 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:07:19 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:07:19 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:13:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAKi
+2020-09-01 20:13:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAKi
+2020-09-01 20:14:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:14:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:14:53 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:14:53 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:14:53 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:14:53 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:14:53 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:15:58 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:15:58 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:16:03 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:16:03 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:16:03 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:16:03 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:16:03 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:17:29 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:17:29 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:17:29 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:17:29 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:17:29 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:17:29 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:17:29 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:17:51 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:17:51 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:18:28 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:18:28 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:18:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:18:28 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:18:28 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:18:28 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:18:28 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:01 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:19:01 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:19:01 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:01 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:19:01 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:01 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:19:01 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:28 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:19:28 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:19:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:28 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:19:28 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:28 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:19:28 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:43 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:19:43 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:19:43 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:43 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:19:43 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:43 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:19:43 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:19:56 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:19:56 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:20:26 INFO  UserService:24 - In UserService looking for user name and pw ... nullnull
+2020-09-01 20:20:26 INFO  UserDAO:39 - UserDao looking for user name and pw ... nullnull
+2020-09-01 20:20:33 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:20:33 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:20:33 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:20:33 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:20:33 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:20:33 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:20:33 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:21:27 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:21:27 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:21:27 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:21:27 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:21:27 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:21:27 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:21:27 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:21:40 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:21:40 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:21:45 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:21:45 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:21:45 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:23:31 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:23:31 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:23:36 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:23:36 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:23:36 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:24:29 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:24:29 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:24:33 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:24:33 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:24:33 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:24:33 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:24:33 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:25:00 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:25:00 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:25:00 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:25:00 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:25:00 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:25:00 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:25:00 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:26:34 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:26:34 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:26:34 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:26:34 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:26:34 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:26:34 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:26:34 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:28:10 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:28:10 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:28:15 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:28:15 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:28:15 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:28:15 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:28:15 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:44 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:32:44 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:32:49 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:49 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:32:49 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:49 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:32:49 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:58 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:32:58 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:32:58 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:32:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:32:58 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:32:58 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:35:07 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:35:07 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:35:12 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:35:12 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:35:12 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:35:19 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:35:19 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:35:19 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:35:19 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:35:19 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:48:23 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:48:23 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:48:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:48:28 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:48:28 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:48:39 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:48:39 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:48:39 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:48:39 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:48:39 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:49:31 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:49:31 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:49:36 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:49:36 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:49:36 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:49:36 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:49:36 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:52:55 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:52:55 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:53:00 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:53:00 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:53:00 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:53:00 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:53:00 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:54:48 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:54:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:54:48 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:54:48 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:54:48 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:54:48 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:54:48 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:59:24 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 20:59:24 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 20:59:28 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:59:28 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 20:59:28 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 20:59:28 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 20:59:28 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:00:27 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:00:27 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:00:31 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:00:31 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:00:31 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:00:31 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:00:31 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:00:31 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:01:27 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:01:27 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:01:27 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:01:27 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:01:27 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:01:27 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:01:27 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:02:29 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:02:29 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:02:29 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:02:29 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:02:29 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:02:29 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:02:29 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:02:36 INFO  UserService:24 - In UserService looking for user name and pw ... 
+2020-09-01 21:02:36 INFO  UserDAO:39 - UserDao looking for user name and pw ... 
+2020-09-01 21:03:08 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:03:08 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:03:08 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:03:08 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:03:08 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:03:08 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:03:08 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:08:41 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:08:41 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:08:45 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:08:45 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:08:45 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:08:45 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:08:45 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:22:32 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:22:32 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:22:37 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:22:37 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:22:37 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:22:37 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:22:37 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:27:37 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:27:37 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:27:42 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:27:42 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:27:42 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:27:42 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:27:42 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:38:23 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:38:23 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:39:39 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:39:39 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:40:59 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:40:59 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:41:43 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:41:43 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:42:48 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:42:48 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:43:12 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:43:12 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:45:57 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:45:57 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:46:47 INFO  UserService:24 - In UserService looking for user name and pw ... Aki
+2020-09-01 21:46:47 INFO  UserDAO:39 - UserDao looking for user name and pw ... Aki
+2020-09-01 21:49:42 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:49:42 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:49:46 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:49:46 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:49:46 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:49:46 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:49:46 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:50:51 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:50:51 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:50:56 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:50:56 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:50:56 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:51:34 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:51:34 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:51:38 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:51:38 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:51:38 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:51:38 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:51:38 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:52:25 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:52:25 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:52:29 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:52:29 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:52:29 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:52:29 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:52:29 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:53:58 INFO  UserService:24 - In UserService looking for user name and pw ... AkiAki
+2020-09-01 21:53:58 INFO  UserDAO:39 - UserDao looking for user name and pw ... AkiAki
+2020-09-01 21:53:58 INFO  UserDAO:43 - User Dao find user by name and pw Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:53:58 INFO  LoginService:21 - Login Service loginAkiAki
+2020-09-01 21:53:58 INFO  LoginService:25 - LoginService successfully processed. User Logged in.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]
+2020-09-01 21:53:58 INFO  UserService:29 - In UserService looking for user by user name. Aki
+2020-09-01 21:53:58 INFO  UserDAO:60 - User Dao find user by name Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com]

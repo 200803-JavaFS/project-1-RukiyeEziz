@@ -6,7 +6,7 @@ import com.revature.models.Users;
 
 public interface IUserDAO {
 	
-	// login check ???????????
+	// login check 
 	public Users findUserByNamePW(String username, String password); 
 	/////////////////////
 	
@@ -16,13 +16,14 @@ public interface IUserDAO {
 	
 	public Users findByUsername(String username);
 	
-	/* public List<String> findUserRoleByUserId(int userid); */
+	public boolean addUser(Users user);  
 	
-	public boolean addUser(Users user);  // do i need it???
+	public boolean updateUser(Users user); 
 	
-	public boolean updateUser(Users user); // do i need it???
+//	public boolean removeUser(int userId);
 	
-	
+//	public List<String> findUserRoleByUserId(int userid); 
+		
 	
 	
 	

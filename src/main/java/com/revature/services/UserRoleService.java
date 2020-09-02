@@ -12,6 +12,11 @@ public class UserRoleService {
 	private static final Logger log = LogManager.getLogger(UserRoleService.class);
 	private static IUserRoleDAO userRoleDao = new UserRolesDAO();
 	
+	public UserRoles findByUserRoleId(int userroleid) {
+		log.info("UserRoleService tying to found user role by user role from DB." + userroleid);
+		return userRoleDao.findByUserRoleId(userroleid);
+	}
+	
 	public UserRoles findUserRoleByUserId(int userid) {
 		
 		log.info("UserRoleService tying to found user role by user id from DB." + userid);
@@ -20,5 +25,4 @@ public class UserRoleService {
 	}
 	
 	
-
 }
