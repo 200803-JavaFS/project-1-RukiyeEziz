@@ -172,6 +172,14 @@ table {
     padding-left: 30px;
 }
 #reimb_amount {
-    height: 30px;
+
     padding: .375rem .75rem;
+}
+#reimb_date{
+    padding: 8px;
+}
+#emp_home_warning {
+    color: red;
+    font-size: 12px;
+    display: none;
 }

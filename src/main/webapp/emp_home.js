@@ -29,12 +29,16 @@ createNewBtn.addEventListener("click", () => {
     let detailBlock = document.getElementById("detail_block");
     detailBlock.style.display = 'block';
     console.log("clik meee");
+
+    var today = new Date();
+    var todayDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
+    let fts = (today.getTime() / 1000) * 1000;
+    console.log(fts);
+    document.getElementById("reimb_date").value = todayDate;
+
     getNewReimbDetails();
+
 });
-
-
-
-
 
 
 async function empReimbs() {
@@ -115,12 +119,7 @@ async function addNewReimb() {
 
     console.log("user id " + userId);
 
-    var today = new Date();
-    var todayDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
-    let fts = (today.getTime() / 1000) * 1000;
-    console.log(fts);
-
-    document.getElementById("reimb_date").innerText = todayDate;
+    
 
     let amountInput = document.getElementById("reimb_amount").value;
     let descrptionInput = document.getElementById("reimb_desc").value;
@@ -128,8 +127,12 @@ async function addNewReimb() {
     let type = typeInput.options[typeInput.selectedIndex].value;
     console.log("option type " + type);
 
+    var today = new Date();
+    var todayDate = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
+    let fts = (today.getTime() / 1000) * 1000;
+    console.log(fts);
 
-    console.log("dateInput " + todayDate);
+    //console.log("dateInput " + todayDate);
     console.log("typeInput " + type);
     console.log("descrptionInput " + descrptionInput);
     console.log("amountInput " + amountInput);
@@ -161,6 +164,9 @@ async function addNewReimb() {
 
     }
     else {
+        var warning = document.getElementById("emp_home_warning");
+        warning.style.display = 'block';
+        warning.innerText = "*** Invalid input values. Re-enter again...";
         console.log("something went wrong");
     }
 
@@ -181,6 +187,14 @@ function cancelInputs() {
     typeInput.value = "0";
     descrptionInput.value = "";
     amountInput.value = 0.00;
+
+    var warning = document.getElementById("emp_home_warning");
+    if (warning.style.display == 'block') {
+        warning.style.display = 'none';
+        warning.innerText = "";
+    }
+    
+   
 
 }
 function convertTimestampToDate(ts) {

@@ -85,12 +85,16 @@
                 <div class="remib_detail_table">
 
                     <div class="form-group row">
-                        <label for="date" class="col-sm-4 mt-2 mb-2" id="date_label">Created Date:</label>
-                        <div class="col-sm-6 mt-2 mb-2" id="reimb_date"></div>
+
+
+                        <label for="reimb_date" class="col-sm-4 mt-4" id="date_label">Created Date:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext " id="reimb_date">
+                        </div>
 
                         <label for="reimb_option" class="col-sm-4 col-form-label" id="type_label">Select Type:</label>
                         <div class="col-sm-6">
-                            <select id="reimb_option">
+                            <select class="form-control " id="reimb_option">
                                 <option value="0">---</option>
                                 <option value="1">Lodging</option>
                                 <option value="2">Travel</option>
@@ -99,15 +103,24 @@
                             </select>
                         </div>
 
-                        <label for="reimb_desc" class="col-sm-4" id="description_label">Description:</label>
-                        <input id="reimb_desc" class="form-control col-sm-6" name="reimb_desc" type="text" placeholder="---">
+                        <label for="reimb_desc" class="col-sm-4 mt-2" id="description_label">Description:</label>
+                        <div class="col-sm-6">
+                            <input id="reimb_desc" class="form-control" name="reimb_desc" type="text" placeholder="---">
+                        </div>
 
                         <label for="reimb_amount" class="col-sm-4" id="amount_label">Amount:</label>
-                        <input id="reimb_amount" class="form-control col-sm-6" name="reimb_amount" type="number" step='0.01' value='0.00' placeholder='0.00'>
-
+                        <div class="col-sm-6">
+                            <input id="reimb_amount" class="form-control" name="reimb_amount" type="number" step='0.01' value='0.00' placeholder='0.00'>
+                        </div>
+                        <div class="col-sm-2">
+                            <button id="submit_btn">Submit</button>
+                        </div>
+                        <div class="col-sm-2">
+                            <button id="cancel_btn">Cancel</button>
+                        </div>
+                        <div id="emp_home_warning"></div>
                     </div>
-                    <div class="col-sm-2"><button id="submit_btn">Submit</button></div>
-                    <div class="col-sm-2"><button id="cancel_btn">Cancel</button></div>
+
                 </div>
             </div>
 
