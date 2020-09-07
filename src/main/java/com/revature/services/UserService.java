@@ -1,5 +1,8 @@
 package com.revature.services;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.SQLException;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -20,12 +23,13 @@ public class UserService {
 	}
 	
 	public Users findUserByNamePW(String username, String password) {
-		
-		log.info("In UserService looking for user name and pw ... " + username + password);
+			
+		log.info("In UserService looking for user name and pw ... " + username + " " + password);	
 		return userDao.findUserByNamePW(username, password);
+		
 	}
 	
-	public Users findUserByUsername(String username) {
+	public Users findUserByUserName(String username) {
 		log.info("In UserService looking for user by user name. " + username);
 		return userDao.findByUsername(username);
 	}
@@ -47,3 +51,5 @@ public class UserService {
 	
 	
 }
+
+

@@ -15,6 +15,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name="ers_users")
 public class Users implements Serializable{
@@ -48,17 +51,17 @@ public class Users implements Serializable{
 	@Column(name="user_email", unique=true, nullable=false)
 	private String email;
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="user_role_id_fk", nullable=false)
+//	@JsonBackReference                                     // do this if i dont want joining col show up in json
 	private UserRoles userRoleFK; // this FK and it links to UserRoles   UserList
-	
-	
-	@OneToMany(mappedBy="reimbAuthor", fetch=FetchType.LAZY)
-	private List<Reimbursement> reimbAuthorList; // it links to Reimbursement
-	
-	@OneToMany(mappedBy="reimbResolver", fetch=FetchType.EAGER)
-	private List<Reimbursement> reimbRevolverList; // it links to Reimbursement
-	
+//	
+//	@OneToMany(mappedBy="reimbAuthor", fetch=FetchType.LAZY)
+//	private List<Reimbursement> reimbAuthorList; // it links to Reimbursement
+//	
+//	@OneToMany(mappedBy="reimbResolver", fetch=FetchType.EAGER)
+//	private List<Reimbursement> reimbRevolverList; // it links to Reimbursement
+//	
 	
 	
 	public Users() {
@@ -66,7 +69,7 @@ public class Users implements Serializable{
 	}
 
 	public Users(int usersId, String userName, String password, String firstName, String lastName, String email,
-			UserRoles userRoleFK, List<Reimbursement> reimbAuthorList, List<Reimbursement> reimbRevolverList) {
+			UserRoles userRoleFK) { //, List<Reimbursement> reimbAuthorList, List<Reimbursement> reimbRevolverList) {
 		super();
 		this.usersId = usersId;
 		this.userName = userName;
@@ -75,13 +78,13 @@ public class Users implements Serializable{
 		this.lastName = lastName;
 		this.email = email;
 		this.userRoleFK = userRoleFK;
-		this.reimbAuthorList = reimbAuthorList;
-		this.reimbRevolverList = reimbRevolverList;
+		//this.reimbAuthorList = reimbAuthorList;
+		//this.reimbRevolverList = reimbRevolverList;
 	}
 
 
 	public Users(String userName, String password, String firstName, String lastName, String email,
-			UserRoles userRoleFK, List<Reimbursement> reimbAuthorList, List<Reimbursement> reimbRevolverList) {
+			UserRoles userRoleFK) {//, List<Reimbursement> reimbAuthorList, List<Reimbursement> reimbRevolverList) {
 		super();
 		this.userName = userName;
 		this.password = password;
@@ -89,8 +92,8 @@ public class Users implements Serializable{
 		this.lastName = lastName;
 		this.email = email;
 		this.userRoleFK = userRoleFK;
-		this.reimbAuthorList = reimbAuthorList;
-		this.reimbRevolverList = reimbRevolverList;
+//		this.reimbAuthorList = reimbAuthorList;
+//		this.reimbRevolverList = reimbRevolverList;
 	}
 
 
@@ -162,26 +165,26 @@ public class Users implements Serializable{
 	public void setUserRoleFK(UserRoles userRoleFK) {
 		this.userRoleFK = userRoleFK;
 	}
-
-
-	public List<Reimbursement> getReimbAuthorList() {
-		return reimbAuthorList;
-	}
-
-
-	public void setReimbAuthorList(List<Reimbursement> reimbAuthorList) {
-		this.reimbAuthorList = reimbAuthorList;
-	}
-
-
-	public List<Reimbursement> getReimbRevolverList() {
-		return reimbRevolverList;
-	}
-
-
-	public void setReimbRevolverList(List<Reimbursement> reimbRevolverList) {
-		this.reimbRevolverList = reimbRevolverList;
-	}
+//
+//
+//	public List<Reimbursement> getReimbAuthorList() {
+//		return reimbAuthorList;
+//	}
+//
+//
+//	public void setReimbAuthorList(List<Reimbursement> reimbAuthorList) {
+//		this.reimbAuthorList = reimbAuthorList;
+//	}
+//
+//
+//	public List<Reimbursement> getReimbRevolverList() {
+//		return reimbRevolverList;
+//	}
+//
+//
+//	public void setReimbRevolverList(List<Reimbursement> reimbRevolverList) {
+//		this.reimbRevolverList = reimbRevolverList;
+//	}
 
 
 	@Override
@@ -192,8 +195,8 @@ public class Users implements Serializable{
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((reimbAuthorList == null) ? 0 : reimbAuthorList.hashCode());
-		result = prime * result + ((reimbRevolverList == null) ? 0 : reimbRevolverList.hashCode());
+		//result = prime * result + ((reimbAuthorList == null) ? 0 : reimbAuthorList.hashCode());
+		//result = prime * result + ((reimbRevolverList == null) ? 0 : reimbRevolverList.hashCode());
 		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
 		result = prime * result + ((userRoleFK == null) ? 0 : userRoleFK.hashCode());
 		result = prime * result + usersId;
@@ -230,16 +233,16 @@ public class Users implements Serializable{
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
-		if (reimbAuthorList == null) {
-			if (other.reimbAuthorList != null)
-				return false;
-		} else if (!reimbAuthorList.equals(other.reimbAuthorList))
-			return false;
-		if (reimbRevolverList == null) {
-			if (other.reimbRevolverList != null)
-				return false;
-		} else if (!reimbRevolverList.equals(other.reimbRevolverList))
-			return false;
+//		if (reimbAuthorList == null) {
+//			if (other.reimbAuthorList != null)
+//				return false;
+//		} else if (!reimbAuthorList.equals(other.reimbAuthorList))
+//			return false;
+//		if (reimbRevolverList == null) {
+//			if (other.reimbRevolverList != null)
+//				return false;
+//		} else if (!reimbRevolverList.equals(other.reimbRevolverList))
+//			return false;
 		if (userName == null) {
 			if (other.userName != null)
 				return false;
@@ -259,7 +262,7 @@ public class Users implements Serializable{
 	@Override
 	public String toString() {
 		return "Users [usersId=" + usersId + ", userName=" + userName + ", password=" + password + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", email=" + email + "]";
+				+ firstName + ", lastName=" + lastName + ", email=" + email + ", userRole=" + userRoleFK+ "]";
 	}
 
 	

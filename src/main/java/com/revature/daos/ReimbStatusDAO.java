@@ -28,6 +28,13 @@ public class ReimbStatusDAO implements IReimbStatusDAO {
 		
 		return null;
 	}
+	
+	@Override
+	public ReimbStatus findReimbStatus(String status) {
+		Session ses = HibernateUtil.getSession();
+		List<ReimbStatus> list = (List<ReimbStatus>) ses.createQuery("FROM ReimbStatus WHERE reimbStatus='" + status + "'", ReimbStatus.class).list();
+		return list.get(0);
+	}
 
 	@Override
 	public ReimbStatus findReimbStatus(int statusid) {
@@ -36,6 +43,8 @@ public class ReimbStatusDAO implements IReimbStatusDAO {
 		
 		return status;
 	}
+
+
 
 
 

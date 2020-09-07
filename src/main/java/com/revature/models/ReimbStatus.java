@@ -27,28 +27,34 @@ public class ReimbStatus implements Serializable{
 	
 	@Column(name="reimb_status", nullable=false)
 	private String reimbStatus;		// Pending, Approved, Denied
-	
-	@OneToMany(mappedBy="reimbStatusFK", fetch=FetchType.EAGER)
-	private List<Reimbursement> reimbList;	// it links to Reimbursement
-	
+//	
+//	@OneToMany(mappedBy="reimbStatusFK", fetch=FetchType.EAGER)
+//	private List<Reimbursement> reimbList;	// it links to Reimbursement
+//	
+//	
 	
 	
 	public ReimbStatus() {
 		super();
 	}
 
-	public ReimbStatus(int reimbStatusId, String reimbStatus, List<Reimbursement> reimbList) {
+	public ReimbStatus(int reimbStatusId, String reimbStatus) { //, List<Reimbursement> reimbList) {
 		super();
 		this.reimbStatusId = reimbStatusId;
 		this.reimbStatus = reimbStatus;
-		this.reimbList = reimbList;
+		//this.reimbList = reimbList;
 	}
 
-	public ReimbStatus(String reimbStatus, List<Reimbursement> reimbList) {
+	public ReimbStatus(String reimbStatus) { //, List<Reimbursement> reimbList) {
 		super();
 		this.reimbStatus = reimbStatus;
-		this.reimbList = reimbList;
+		//this.reimbList = reimbList;
 	}
+	
+//	public ReimbStatus(String reimbStatus) {
+//		super();
+//		this.reimbStatus = reimbStatus;
+//	}
 
 	public int getReimbStatusId() {
 		return reimbStatusId;
@@ -65,20 +71,20 @@ public class ReimbStatus implements Serializable{
 	public void setReimbStatus(String reimbStatus) {
 		this.reimbStatus = reimbStatus;
 	}
-
-	public List<Reimbursement> getReimbList() {
-		return reimbList;
-	}
-
-	public void setReimbList(List<Reimbursement> reimbList) {
-		this.reimbList = reimbList;
-	}
+//
+//	public List<Reimbursement> getReimbList() {
+//		return reimbList;
+//	}
+//
+//	public void setReimbList(List<Reimbursement> reimbList) {
+//		this.reimbList = reimbList;
+//	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((reimbList == null) ? 0 : reimbList.hashCode());
+		//result = prime * result + ((reimbList == null) ? 0 : reimbList.hashCode());
 		result = prime * result + ((reimbStatus == null) ? 0 : reimbStatus.hashCode());
 		result = prime * result + reimbStatusId;
 		return result;
@@ -93,11 +99,11 @@ public class ReimbStatus implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		ReimbStatus other = (ReimbStatus) obj;
-		if (reimbList == null) {
-			if (other.reimbList != null)
-				return false;
-		} else if (!reimbList.equals(other.reimbList))
-			return false;
+//		if (reimbList == null) {
+//			if (other.reimbList != null)
+//				return false;
+//		} else if (!reimbList.equals(other.reimbList))
+//			return false;
 		if (reimbStatus == null) {
 			if (other.reimbStatus != null)
 				return false;
@@ -110,8 +116,9 @@ public class ReimbStatus implements Serializable{
 
 	@Override
 	public String toString() {
-		return "ReimbStatus [reimbStatusId=" + reimbStatusId + ", reimbStatus=" + reimbStatus + ", reimbList="
-				+ reimbList + "]";
+		return "ReimbStatus [reimbStatusId=" + reimbStatusId + ", reimbStatus=" + reimbStatus + "]"; 
+		     //+ ", reimbList="
+				//+ reimbList + "]";
 	}
 	
 	

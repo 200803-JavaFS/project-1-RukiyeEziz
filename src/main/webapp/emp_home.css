@@ -28,7 +28,7 @@ body {
 }
 .flex-article {
   border: 1px solid #d8dde6;
-  flex: 2 2;
+  flex: 3 3;
   background-color: #f5f5f5; /* light grey*/
   padding-top: 3rem;
   padding:3rem;
@@ -95,6 +95,7 @@ span.pw {
 	float: right;
 	color: 	#808080;
 	font-weight: bold;
+
 }
 .topnav a {
   float: left;
@@ -116,15 +117,61 @@ span.pw {
 
 /* *******************   tables  ******************** */
 
-table{
-	border: 1px solid #d8dde6;
-	
+table {
+    border: 1px solid #d8dde6;
+    font-family: Ek Mukta;
+    font-size: 14px;
 }
 
-.table_name_div{
-	padding: 1rem;
-	text-align: center;
-	background-color: #006080;		/* navy */
-	color: #ffffff;
-	font-weight: bold;	
+.table_name_div {
+    padding: 1rem;
+    text-align: center;
+    background-color: #006080; /* navy */
+    color: #ffffff;
+    
+    font-size: 14px;
+    font-family: Ek Mukta;
+}
+#detail_block {
+    display: none;
+}
+#create_new_btn {
+    border: 1px solid #d8dde6;
+    background-color: #f26925; /* orange */
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0;
+    cursor: pointer;
+    /*  display: none;   width: 100%;*/
+}
+
+#submit_btn {
+
+    border: 1px solid #d8dde6;
+    background-color: #f26925; /* orange */
+    color: white;
+    padding: 14px 20px;
+    margin: 16px 0 0 16px;
+    cursor: pointer;
+}
+#cancel_btn {
+    border: 1px solid #d8dde6;
+    background-color: white; /* orange */
+    color: #f26925;
+    padding: 14px 20px;
+    margin: 16px 0 0 16px;
+    cursor: pointer;
+}
+.remib_detail_table {
+    border: 1px solid #d8dde6;
+    font-family: Ek Mukta;
+    font-size: 14px;
+    padding: 0 1rem 1rem 1rem;
+}
+#type_label, #description_label, #amount_label, #date_label {
+    padding-left: 30px;
+}
+#reimb_amount {
+    height: 30px;
+    padding: .375rem .75rem;
 }

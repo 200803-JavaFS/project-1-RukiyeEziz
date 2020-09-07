@@ -1,5 +1,7 @@
 package com.revature.daos;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 //import java.sql.Connection;
@@ -36,14 +38,17 @@ public class UserDAO implements IUserDAO {
 	
 	@Override
 	public Users findUserByNamePW(String username, String password) {
-		log.info("UserDao looking for user name and pw ... " + username + password);
+		
+		
+		log.info("UserDao looking for user name and pw ... " + username + " ---- " + password);
 		Session session = HibernateUtil.getSession();
 		List<Users> list  = session.createQuery("FROM Users WHERE userName = '" + username + "' AND password = '" + password + "'", Users.class).list();
 		Users user = list.get(0);
+	
 		log.info("User Dao find user by name and pw " + user);
 		return user;
 	}	
-
+	
 	@Override
 	public Users findUserById(int userid) {
 		Session session = HibernateUtil.getSession();

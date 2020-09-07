@@ -24,8 +24,8 @@
 			<a href="#help" id="help_btn">HELP</a>			
 			<div class="logout">
 				<a>
-					<span class="profile_name">RUKIYE</span>	
-					<a href="#home" id="logout_btn">LOGOUT</a>
+					<span id="profile_name"></span>	
+					<a id="logout_btn">LOGOUT</a>
 				</a>
 			</div>
 		</div>		
@@ -35,7 +35,7 @@
 	<div class="flex-main" id="flex-main">		
 		<!-- left (static)-->
 		<article class="flex-aside-left">			
-			<div class="table_name_div">Timesheets</div>
+			<div class="table_name_div">TIMESHEETS</div>
 			<div class="timesheet_table">
 				<table class="table table-striped">	
 	 
@@ -61,31 +61,62 @@
 		
 		<!-- middle -->
 		<article class="flex-article">
-			<div class="table_name_div">User Information for now</div>	
+			<div class="table_name_div">EXPENSE REIMBURSEMENT</div>	
 			<div class="remib_table">
 				<table class="table table-striped " id="home_reimb_table">
 					<thead>
-	                    <tr>
-	                        <th>User ID</th>
-	                        <th>User Name</th>
-	                        <th>Password</th>
-	                        <th>First Name</th>
-	                        <th>Last Name</th>
-	                        <th>Email</th>
-	                        <th>User Role</th>
-	                    </tr>
+                        <tr>
+                            <th>REIMBURSEMENT ID</th>
+                            <th>STATUS</th>
+                            <th>TYPE</th>
+                            <th>TOTAL AMOUNT</th>
+                            <th>CREATED DATE</th>
+                            <th>SUBMITTED DATE</th>
+                        </tr>
                 	</thead>		 
-					<tbody id="userinfo_tbody">
-  
-					</tbody>
+					<tbody id="reimb_tbody"></tbody>
 				</table>
-			</div>		
-										
-		</article>
+			</div><br />	
+			
+            <div><button id="create_new_btn">+ Create New Expense</button></div>
+
+            <div id="detail_block">  
+                <div class="table_name_div">EXPENSE REIMBURSEMENTEXPENSE DETAIL</div>
+                <div class="remib_detail_table">
+
+                    <div class="form-group row">
+                        <label for="date" class="col-sm-4 mt-2 mb-2" id="date_label">Created Date:</label>
+                        <div class="col-sm-6 mt-2 mb-2" id="reimb_date"></div>
+
+                        <label for="reimb_option" class="col-sm-4 col-form-label" id="type_label">Select Type:</label>
+                        <div class="col-sm-6">
+                            <select id="reimb_option">
+                                <option value="0">---</option>
+                                <option value="1">Lodging</option>
+                                <option value="2">Travel</option>
+                                <option value="3">Food</option>
+                                <option value="4">Other</option>
+                            </select>
+                        </div>
+
+                        <label for="reimb_desc" class="col-sm-4" id="description_label">Description:</label>
+                        <input id="reimb_desc" class="form-control col-sm-6" name="reimb_desc" type="text" placeholder="---">
+
+                        <label for="reimb_amount" class="col-sm-4" id="amount_label">Amount:</label>
+                        <input id="reimb_amount" class="form-control col-sm-6" name="reimb_amount" type="number" step='0.01' value='0.00' placeholder='0.00'>
+
+                    </div>
+                    <div class="col-sm-2"><button id="submit_btn">Submit</button></div>
+                    <div class="col-sm-2"><button id="cancel_btn">Cancel</button></div>
+                </div>
+            </div>
+
+
+</article>
 		
 		<!-- right (static)-->
 		<article class="flex-aside-right">		
-			<div class="table_name_div">Announcements</div>
+			<div class="table_name_div">ANNOUNCEMENT</div>
 			<div class="announcement_table">
 				<table class="table table-striped">		 
 					<tbody>
@@ -94,11 +125,11 @@
 							<td>--></td>
 						</tr>
 						<tr>
-							<td>Employee Blog Update</td>
+							<td>Employee Blog</td>
 							<td>--></td>
 						</tr>
 						<tr>
-							<td>PTO and Holiday Pay For Employee</td>
+							<td>PTO Information</td>
 							<td>--></td>
 						</tr>		  
 					</tbody>

@@ -3,6 +3,8 @@ package com.revature.controllers;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,7 +21,7 @@ import com.revature.services.LoginService;
 import com.revature.services.UserRoleService;
 import com.revature.services.UserService;
 
-public class LoginController extends HttpServlet{
+public class LoginController {
 	
 	private static LoginService loginService = new LoginService();
 	private static ObjectMapper objectMapper = new ObjectMapper();
@@ -29,7 +31,7 @@ public class LoginController extends HttpServlet{
 	
 	public void login(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
-		System.out.println("In LoginController request: " + req.getParameterMap().containsKey("username"));
+		System.out.println(" 1 -- In LoginController request.getparam: " + req.getParameterMap().containsKey("username"));
 		
 		LoginDTO loginDto = new LoginDTO();	
 		
@@ -40,14 +42,13 @@ public class LoginController extends HttpServlet{
 		loginDto.username = userName;
 		loginDto.password = password;
 		
-		System.out.println("In LoginController loginDTO info for  " + loginDto.username + " " + loginDto.password);
-		System.out.println("In LoginController request: " + req.getContentType() );// .getParameterMap().containsKey("username"));
+		System.out.println(" 2 -- In LoginController loginDTO.name;  " + loginDto.username + " " + loginDto.password);
+		System.out.println(" 3 -- In LoginController request.getContent: " + req.getContentType() );// .getParameterMap().containsKey("username"));
 
 		RequestDispatcher rd = null;
 		//PrintWriter out = res.getWriter();		
 		
-		if(req.getMethod().equals("GET")) {		// GET
-			
+		if(req.getMethod().equals("GET")) {		// GET		
 			
 			if(loginService.login(loginDto)) {
 				
@@ -57,7 +58,7 @@ public class LoginController extends HttpServlet{
 				ses.setAttribute("loggedin", true);
 				
 				res.setStatus(200);				
-				res.getWriter().println("Login Controller GET - Login Successful");
+				res.getWriter().println(" 4 -- Login Controller if GET: - Login Successful");
 				
 			} else {
 				
@@ -69,7 +70,7 @@ public class LoginController extends HttpServlet{
 				}
 				
 				res.setStatus(401);				
-				res.getWriter().println("Login Controller GET - Login failed");
+				res.getWriter().println(" 5 -- Login Controller if GET: - Login failed");
 			}
 			
 		}
@@ -86,76 +87,29 @@ public class LoginController extends HttpServlet{
 			}
 			
 			String body = new String(stringBuilder);
-			System.out.println("In LoginController POST req body: " + body);
+			System.out.println(" 6 -- In LoginController POST req.getReader body: " + body);
 			
 			loginDto = objectMapper.readValue(body, LoginDTO.class);
 			
 			//Users user = objectMapper.readValue(body, Users.class);
-			System.out.println("In LoginController object mapper: " + loginDto.toString());
+			System.out.println(" 7 -- In LoginController object mapper: " + loginDto.toString());
+			System.out.println("user service.login " + loginService.login(loginDto));
+			
+
 			
 			if(loginService.login(loginDto)) {
 				
 				HttpSession session = req.getSession();
-				System.out.println("Login Controller POST session - You logged in, success!" + session);
+				System.out.println(" 8 -- Login Controller POST session - You logged in, success!" + session);
 				
 				session.setAttribute("user", loginDto);
 				session.setAttribute("loggedin", true);
 				
-				System.out.println("Login Controller after setAttribute session - You logged in, success!" + session);
+				System.out.println(" 9 -- Login Controller after setAttribute session - You logged in, success!" + session);
 				
 				res.setStatus(200);
-				res.getWriter().println("Login Controller POST- Login Successful");
-				
-//				if(res.getStatus() == 200) {
-//					System.out.println("do something??");
-//					rd = req.getRequestDispatcher("takemehome");
-//					rd.forward(req, res);
-//					
-//				}
-
-
-				//res.setContentType("text/html");
-				
-//				Users user = userService.findUserByUsername(userName) ;
-//				System.out.println(user);
-//				UserRoles userRole = userRoleService.findUserRoleByUserId(user.getUsersId());
-//				System.out.println(userRole);
-				
-				// what should i do???????????
-				
-//				In Login Servlet...
-//				login controller loginDTO info for  Aki Aki
-//				body: 
-//				22:43:47.078 [http-nio-8080-exec-9] INFO  com.revature.services.UserService - In UserService looking for user name and pw ... AkiAki
-//				22:43:47.881 [http-nio-8080-exec-9] INFO  com.revature.daos.UserDAO - UserDAO found user and pw info from DB: Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com, userRolesFK=2]
-//				22:43:47.882 [http-nio-8080-exec-9] INFO  com.revature.services.LoginService - Login Service loginAkiAki
-//				22:43:47.882 [http-nio-8080-exec-9] INFO  com.revature.services.LoginService - LoginService successfully processed. User Logged in.
-//				Login Controller POST- You logged in, success!
-//				22:43:47.890 [http-nio-8080-exec-9] INFO  com.revature.services.UserService - In UserService find the user by user name.
-//				22:43:48.172 [http-nio-8080-exec-9] INFO  com.revature.daos.UserDAO - UserDAO successfully found user by user name from DB.Users [usersId=2, userName=Aki, password=Aki, firstName=Aki, lastName=Tartamella, email=akitartamella@gmail.com, userRolesFK=2]
-//				22:43:48.173 [http-nio-8080-exec-9] INFO  com.revature.services.UserRoleService - UserRoleService tying to found user role by user id from DB.2
-//				22:43:48.452 [http-nio-8080-exec-9] INFO  com.revature.daos.UserRolesDAO - UserRolesDAO successfully found user role by user id from DB.2
-//				
-				
-				
-				
-//				find user role by user id or whatever
-//				depend on the user role maybe 2 different html or one for now?
-				
-				
-//				if (userRole.getUserRole().equals("Employee")) {	
-//					
-//					req.getRequestDispatcher("emp_home.html").forward(req,res);
-//					
-//					System.out.println("Employee Home page Loaded.");
-//					
-//				} else if (userRole.getUserRole().equals("Manager")) {
-//					
-//					req.getRequestDispatcher("admin_home.html").forward(req,res);
-//					
-//					System.out.println("Admin Home page Loaded.");
-//				}
-				
+				res.getWriter().println(" 10 -- Login Controller POST- Login Successful");
+				System.out.println("after 2200 status" + res.getStatus());
 				
 			}
 			else {
@@ -166,7 +120,7 @@ public class LoginController extends HttpServlet{
 				}
 				
 				res.setStatus(401);
-				res.getWriter().println("Login Failed.");
+				res.getWriter().println(" 11 -- Login Failed.");
 			}
 			
 		}// end of POST if
@@ -196,7 +150,7 @@ public class LoginController extends HttpServlet{
 		
 	}
 	
-	
+
 	
 
 }

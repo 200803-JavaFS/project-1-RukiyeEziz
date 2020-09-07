@@ -8,6 +8,8 @@ public interface IReimbStatusDAO {
 	
 	public ReimbStatus findReimbStatus(int statusid);
 	
+	public ReimbStatus findReimbStatus(String status);
+	
 	public List<ReimbStatus> findReimbStatusByUserId(int userid);
 
 }

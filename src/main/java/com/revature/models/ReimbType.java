@@ -30,10 +30,10 @@ public class ReimbType implements Serializable{
 	@Column(name="reimb_type", nullable=false)
 	private String reimbType;		// Lodging, Travel, Food, or Other
 	
-	
-	// do I need this for pulling reimb list by reimb type???//////////////////
-	@OneToMany(mappedBy="reimbTypeFK", fetch=FetchType.EAGER)
-	private List<Reimbursement> reimbList;	// it links to Reimbursement
+//	
+//	// do I need this for pulling reimb list by reimb type???//////////////////
+//	@OneToMany(mappedBy="reimbTypeFK", fetch=FetchType.EAGER)
+//	private List<Reimbursement> reimbList;	// it links to Reimbursement
 
 	
 	
@@ -41,18 +41,23 @@ public class ReimbType implements Serializable{
 		super();
 	}
 
-	public ReimbType(int reimbTypeId, String reimbType, List<Reimbursement> reimbList) {
+	public ReimbType(int reimbTypeId, String reimbType) { //, List<Reimbursement> reimbList) {
 		super();
 		this.reimbTypeId = reimbTypeId;
 		this.reimbType = reimbType;
-		this.reimbList = reimbList;
+		//this.reimbList = reimbList;
 	}
 
-	public ReimbType(String reimbType, List<Reimbursement> reimbList) {
+	public ReimbType(String reimbType) { //, List<Reimbursement> reimbList) {
 		super();
 		this.reimbType = reimbType;
-		this.reimbList = reimbList;
+		//this.reimbList = reimbList;
 	}
+//	
+//	public ReimbType(String reimbType) {
+//		super();
+//		this.reimbType = reimbType;
+//	}
 
 	public int getReimbTypeId() {
 		return reimbTypeId;
@@ -69,20 +74,20 @@ public class ReimbType implements Serializable{
 	public void setReimbType(String reimbType) {
 		this.reimbType = reimbType;
 	}
-
-	public List<Reimbursement> getReimbList() {
-		return reimbList;
-	}
-
-	public void setReimbList(List<Reimbursement> reimbList) {
-		this.reimbList = reimbList;
-	}
+//
+//	public List<Reimbursement> getReimbList() {
+//		return reimbList;
+//	}
+//
+//	public void setReimbList(List<Reimbursement> reimbList) {
+//		this.reimbList = reimbList;
+//	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((reimbList == null) ? 0 : reimbList.hashCode());
+		//result = prime * result + ((reimbList == null) ? 0 : reimbList.hashCode());
 		result = prime * result + ((reimbType == null) ? 0 : reimbType.hashCode());
 		result = prime * result + reimbTypeId;
 		return result;
@@ -97,11 +102,11 @@ public class ReimbType implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		ReimbType other = (ReimbType) obj;
-		if (reimbList == null) {
-			if (other.reimbList != null)
-				return false;
-		} else if (!reimbList.equals(other.reimbList))
-			return false;
+//		if (reimbList == null) {
+//			if (other.reimbList != null)
+//				return false;
+//		} else if (!reimbList.equals(other.reimbList))
+//			return false;
 		if (reimbType == null) {
 			if (other.reimbType != null)
 				return false;
@@ -114,7 +119,7 @@ public class ReimbType implements Serializable{
 
 	@Override
 	public String toString() {
-		return "ReimbType [reimbTypeId=" + reimbTypeId + ", reimbType=" + reimbType + ", reimbList=" + reimbList + "]";
+		return "ReimbType [reimbTypeId=" + reimbTypeId + ", reimbType=" + reimbType + "]";  //", reimbList=" + reimbList + "]";
 	}
 	
 }	

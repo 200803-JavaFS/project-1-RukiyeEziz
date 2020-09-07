@@ -1,48 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Login Page</title>
-<link href="./login.css" type="text/css" rel="stylesheet" id="login_style">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" id="login_style">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-	<header class="flex-header"></header>
-    
+    <!-- header -->
+    <div class="row" id="topnav">
+        <div class="column">
+            <!-- <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo"> -->
+            <img src="./logo.png" alt="Revature Logo" class="logo">
+        </div>
+
+        <div class="col-sm" id="login_name_div">
+            <input class="form-control" id="login_username" type="text" placeholder="USERNAME" name="username">
+        </div>
+
+        <div class="col-sm" id="password_div">
+            <input class="form-control" id="login_pw" type="password" placeholder="PASSWORD" name="password">
+        </div>
+        <div class="col-sm" id="btn_div">
+            <button id="login_btn">LOGIN</button>
+            <div id="login_warning"></div>
+        </div>
+        <!-- <div class="colsm" id="welcome_div">Rukiye</div> -->
+        <div class="row" id="logout_col">
+            <div class="col-sm" id="user_name">RUKIYE</div>
+            <button id="logout_btn">LOGOUT</button>
+        </div>
+    </div>
+    <!-- main -->
     <main class="flex-main">
         <nav class="flex-aside-left"></nav>
-        
-        <article class="flex-article">
-        
-<!-- 	        <form action="takemehome" method="POST">
 
-				
-			</form> -->
-			<div class="img_container">	  	
-		  		<img src="./logo.png" class="logo">
-			</div>	
-			
-			<form action="login" method="POST">
-			<div class="input_container">
-			  	<label for="login_username"><b>Username</b></label>
-			  	<input type="text" id="login_username" placeholder="Enter Username" name="login_username" required>
-			
-			  	<label for="login_pw"><b>Password</b></label>
-			  	<input type="password" id="login_pw" placeholder="Enter Password" name="login_pw" required>
-			      
-			  	<input type="submit"  id="login_btn" name="login_btn" value="LOG IN"></input>
-				 
-				<div id="login_warning"></div>	
-			</div>
-			</form>
+        <article class="flex-article">
+            <div id="reimb_info_block">
+                <div class="table_name_div">Reimbursement Information</div>
+                <div class="reimb_table">
+                    <table class="table table-striped " id="home_reimb_table">
+                        <thead>
+                            <tr>
+                                <th>REIMBURSEMENT ID</th>
+                                <th>STATUS</th>
+                                <th>TYPE</th>
+                                <th>TOTAL AMOUNT</th>
+                                <th>CREATED DATE</th>
+                                <th>RECEIPT</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reimb_info_tbody"></tbody>
+                    </table>
+                    <div id="test"></div>
+                </div>
+            </div>
+            
+            <div id="manage_reimb_block">
+                <div class="table_name_div">Manage Reimbursement</div>
+                <div class="reimb_table">
+                    <table class="table table-striped " id="home_reimb_table">
+                        <thead>
+                            <tr>
+                                <th>REIMBURSEMENT ID</th>
+                                <th>STATUS</th>
+                                <th>TYPE</th>
+                                <th>TOTAL AMOUNT</th>
+                                <th>CREATED DATE</th>
+                                <th>SUBMITTED DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userinfo_tbody"></tbody>
+                        <tr>
+                            <td>
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                </div>
+
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                </table>
+            </div>
+            </div>
         </article>
-        
-    	<aside class="flex-aside-right"></aside>
+
+        <aside class="flex-aside-right"></aside>
     </main>
-    
-    <footer class="flex-footer"></footer>	
-    
+
+    <!-- footer -->
+    <footer class="flex-footer">
+        CONTACT US: HR@revature.com
+    </footer>
+
     <script src="login.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

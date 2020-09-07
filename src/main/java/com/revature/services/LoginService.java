@@ -1,6 +1,9 @@
 package com.revature.services;
 
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,21 +18,42 @@ public class LoginService {
 	private static UserService userService = new UserService();
 	
 	public boolean login(LoginDTO loginDto) {
+		
+		String hashedPWFromClient = getHashSHA1(loginDto.password);
+		
+		Users user = userService.findUserByNamePW(loginDto.username, hashedPWFromClient);		
 				
-		Users user = userService.findUserByNamePW(loginDto.username, loginDto.password);
-		
 		log.info("Login Service login" + user.getUserName() + user.getPassword());
-		
-		if(loginDto.username.equals(user.getUserName()) && loginDto.password.equals(user.getPassword())) {
+
+		if(loginDto.username.equals(user.getUserName()) && hashedPWFromClient.equals(user.getPassword())) {
 			
-			log.info("LoginService successfully processed. User Logged in." + user);
+			log.info("LoginService authentication successed. User Logged in." + user);
 			return true;
 		}
 		
-		log.info("LoginService failed the login processed.");
+		log.error("LoginService authentication failed. User loggede in " + user);
 		return false;
 	}
 
-	
+	//////////////////////////
+	private static String getHashSHA1(String pw) {
+		try {
+				MessageDigest md = MessageDigest.getInstance("SHA-1");
+				md.update(pw.getBytes());
+				byte byteData[] = md.digest();
+				StringBuilder sb = new StringBuilder();
+				for(int i = 0; i < byteData.length; i++) {
+				sb.append(Integer.toString(
+				(byteData[i] & 0xff) + 0x100, 16).substring(1));
+			
+		}
+			return sb.toString();
+		}catch(NoSuchAlgorithmException ex) {
+			System.out.println("something went wrong with pw hashing.");
+			return null;
+		}
+	}
+	//////////////////////////////
 
 }
+

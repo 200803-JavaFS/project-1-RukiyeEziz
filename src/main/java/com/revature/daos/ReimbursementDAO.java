@@ -14,6 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import com.revature.models.ReimbStatus;
 import com.revature.models.Reimbursement;
@@ -46,7 +47,9 @@ public class ReimbursementDAO implements IReimbursementDAO {
 		Session session = HibernateUtil.getSession();
 		
 		try {
+			Transaction tx = session.beginTransaction();
 			session.save(reimb);
+			tx.commit();
 			log.info("reimbursement DAO added reimb. ");
 			return true;
 		} catch (HibernateException e) {
@@ -60,7 +63,9 @@ public class ReimbursementDAO implements IReimbursementDAO {
 		Session session = HibernateUtil.getSession();
 		
 		try {
+			Transaction tx = session.beginTransaction();
 			session.merge(reimb);
+			tx.commit();
 			log.info("reimbursement DAO updated the reimb.");
 			return true;
 		} catch (HibernateException e) {
@@ -70,12 +75,12 @@ public class ReimbursementDAO implements IReimbursementDAO {
 	}
 
 	@Override
-	public List<Reimbursement> findReimbursementByStatus(ReimbStatus reimbStatus) {
+	public List<Reimbursement> findReimbursementByStatus(int statusid) {
 		Session session = HibernateUtil.getSession();
 		
 		//????????????????
-		List<Reimbursement> list = session.createQuery("FROM Reimbursement WHERE reimbStatusFK = " + reimbStatus, Reimbursement.class).list();
-		log.info("reimbursement DAO find remib by status. " + list);
+		List<Reimbursement> list = session.createQuery("FROM Reimbursement WHERE reimbStatusFK = " + statusid, Reimbursement.class).list();
+		log.info("reimbursement DAO find remib by status id. " + list);
 		return list;
 	}
 

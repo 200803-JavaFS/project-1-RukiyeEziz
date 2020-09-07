@@ -12,6 +12,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name="ers_user_roles")
 public class UserRoles implements Serializable{
@@ -29,27 +31,28 @@ public class UserRoles implements Serializable{
 	private String userRole;		// employee, finance managers
 	
 	
-	@OneToMany(mappedBy="userRoleFK", fetch=FetchType.EAGER)
-	private List<Users> userList;	// it links to Users
-	
+//	@OneToMany(mappedBy="userRoleFK", fetch=FetchType.EAGER)
+//	@JsonManagedReference
+//	private List<Users> userList;	// it links to Users
+//	
 	
 	public UserRoles() {
 		super();
 	}
 
 
-	public UserRoles(int userRoleId, String userRole, List<Users> userList) {
+	public UserRoles(int userRoleId, String userRole) { //, List<Users> userList) {
 		super();
 		this.userRoleId = userRoleId;
 		this.userRole = userRole;
-		this.userList = userList;
+		//this.userList = userList;
 	}
 
 
-	public UserRoles(String userRole, List<Users> userList) {
+	public UserRoles(String userRole) { //, List<Users> userList) {
 		super();
 		this.userRole = userRole;
-		this.userList = userList;
+		//this.userList = userList;
 	}
 
 
@@ -72,22 +75,22 @@ public class UserRoles implements Serializable{
 		this.userRole = userRole;
 	}
 
-
-	public List<Users> getUserList() {
-		return userList;
-	}
-
-
-	public void setUserList(List<Users> userList) {
-		this.userList = userList;
-	}
+//
+//	public List<Users> getUserList() {
+//		return userList;
+//	}
+//
+//
+//	public void setUserList(List<Users> userList) {
+//		this.userList = userList;
+//	}
 
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((userList == null) ? 0 : userList.hashCode());
+		//result = prime * result + ((userList == null) ? 0 : userList.hashCode());
 		result = prime * result + ((userRole == null) ? 0 : userRole.hashCode());
 		result = prime * result + userRoleId;
 		return result;
@@ -103,11 +106,11 @@ public class UserRoles implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		UserRoles other = (UserRoles) obj;
-		if (userList == null) {
-			if (other.userList != null)
-				return false;
-		} else if (!userList.equals(other.userList))
-			return false;
+//		if (userList == null) {
+//			if (other.userList != null)
+//				return false;
+//		} else if (!userList.equals(other.userList))
+//			return false;
 		if (userRole == null) {
 			if (other.userRole != null)
 				return false;

@@ -5,67 +5,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admin Home</title>
 	<link href="./admin_home.css" type="text/css" rel="stylesheet" id="admin_home">
-		
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">	
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
 
 </head>
 <body>
-	<!-- header navigation -->
-	<header class="flex-header">
-		<div class="topnav" id="myTopnav">
-			<!-- <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo"> -->
-			<img src="./logo.png" alt="Revature Logo" class="logo">
-			<a href="#home" class="active" id="home_btn">HOME</a>
-			<a href="#timesheet" id="timesheet_btn">TIMESHEET</a>
-			<a href="#reimb" id="reimb_btn">EXPENSE REIMBURSEMENT</a>
-			<a href="#help" id="help_btn">HELP</a>			
-			<div class="logout">
-				<a>
-					<span class="profile_name">ADMIN</span>	
-					<a id="logout_btn">LOGOUT</a>
-				</a>
-			</div>
-		</div>		
-	</header>
-	
-	<!-- main -->
-	<div class="flex-main" id="flex-main">		
-		 
-		<!-- middle -->
-		<article class="flex-article">
-			<div class="table_name_div">Expense Reimbursements</div>	
-			<div class="remib_table">
-				<table class="table table-striped" id="home_reimb_table">		 
-					<tbody>
-						<tr>
-							<td>EXP-00031168</td>
-							<td>$250.00</td>
-							<td>Approved</td>
-						</tr>
-						<tr>
-							<td>EXP-00030670</td>
-							<td>$250.00</td>
-							<td>Denied</td>
-						</tr>
-						<tr>
-							<td>EXP-00030670</td>
-							<td>$250.00</td>
-							<td>Pending</td>
-						</tr>		  
-					</tbody>
-				</table>
-			</div>		
-										
-		</article>
-		
+    <!-- header navigation -->
+    <header class="flex-header">
+        <div class="topnav" id="myTopnav">
+            <!-- <img src="../../../imgs/logo.png" alt="Revature Logo" class="logo"> -->
+            <img src="./logo.png" alt="Revature Logo" class="logo">
+            <a href="#home" class="active" id="home_btn">HOME</a>
+            <a href="#timesheet" id="timesheet_btn">TIMESHEET</a>
+            <a href="#reimb" id="reimb_btn">MANAGE REIMBURSEMENT</a>
+            <a href="#help" id="help_btn">HELP</a>
+            <div class="logout">
+                <a>
+                    <span id="profile_name"></span>
+                    <a id="logout_btn">LOGOUT</a>
+                </a>
+            </div>
+        </div>
+    </header>
 
-	</div><!-- end of flex-main -->
-	
-	<!-- footer -->
-	<footer class="flex-footer">
-		CONTACT US: HR@revature.com
-	</footer>	
-	<script src="home.js"></script>
+    <!-- main -->
+    <div class="flex-main" id="flex-main">
+
+        <!-- middle -->
+        <article class="flex-article">
+            <div class="table_name_div">ALL EXPENSE REIMBURSEMENT</div>
+            <div class="remib_table">
+                <table class="table table-striped" id="home_reimb_table">
+                    <thead>
+                        <tr>
+                            <th>REIMBURSEMENT ID</th>
+                            <th>STATUS</th>
+                            <th>TYPE</th>
+                            <th>TOTAL AMOUNT</th>
+                            <th>CREATED DATE</th>
+                            <th>SUBMITTED DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reimb_tbody"></tbody>
+                </table>
+            </div>
+            <div id="manage_blcok">
+                <div id="mng_table_name_div">Manage Reimbursement Detail</div>
+
+            </div>
+
+        </article>
+
+
+    </div><!-- end of flex-main -->
+    <!-- footer -->
+    <footer class="flex-footer">
+        CONTACT US: HR@revature.com
+    </footer>
+    <script src="admin_home.js"></script>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 </body>
 </html>

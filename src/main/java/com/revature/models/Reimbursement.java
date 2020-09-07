@@ -15,6 +15,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity
 @Table(name="ers_reimbursement")
@@ -52,27 +54,29 @@ public class Reimbursement implements Serializable{
 	@Column(name="reimb_receipt")
 	private Byte[] reimbReceipt;
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="ers_users_id_fk_auth", nullable=false)
+	@JsonBackReference												// no need for json
 	private Users reimbAuthor; // it lionks to Users
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="ers_users_id_fk_reslvr")
+	@JsonBackReference
 	private Users reimbResolver; // it links to Users
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
 	@JoinColumn(name="reimb_status_id_fk", nullable=false)
 	private ReimbStatus reimbStatusFK; // it links to Reimbursement
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-	@JoinColumn(name="reimb_type_id_fk", nullable=false)
+	@ManyToOne(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="reimb_type_id_fk", nullable=false)											// no need for json
 	private ReimbType reimbTypeFK;
 	
 //	private Byte reimbReceipt;
 //	private Users users;
 //	private ReimbStatus reimbStatus;
 //	private ReimbType reimbType;
-	
+
 	
 	public Reimbursement() {
 		super();
@@ -269,8 +273,10 @@ public class Reimbursement implements Serializable{
 	public String toString() {
 		return "Reimbursement [reimbId=" + reimbId + ", reimbAmount=" + reimbAmount + ", reimbSubmitted="
 				+ reimbSubmitted + ", reimbResolved=" + reimbResolved + ", reimbDescription=" + reimbDescription
-				+ ", reimbReceipt=" + reimbReceipt + ", reimbAuthor=" + reimbAuthor + ", reimbResolver=" + reimbResolver
-				+ ", reimbStatusFK=" + reimbStatusFK + ", reimbTypeFK=" + reimbTypeFK + "]";
+				+ ", reimbReceipt=" + reimbReceipt + "]";
+				
+				//+ ", reimbAuthor=" + reimbAuthor + ", reimbResolver=" + reimbResolver
+				//+ ", reimbStatusFK=" + reimbStatusFK + ", reimbTypeFK=" + reimbTypeFK + "]";
 	}
 
 	
