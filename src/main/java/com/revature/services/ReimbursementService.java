@@ -52,6 +52,7 @@ public class ReimbursementService {
 		
 		reimb = new Reimbursement(rDto.reimbAmount, rDto.reimbSubmitted, rDto.reimbResolved, rDto.reimbDescription, rDto.reimbReceipt, auth, reslvr, status, type); 
 		
+		log.info("ReimbursementService trying to find reimb by reimb id. " + rDto);
 		return reimbDao.addReimbursement(reimb);
 	}
 	
@@ -69,10 +70,9 @@ public class ReimbursementService {
 	
 	public List<Reimbursement> findReimbursementByUserId(Users user){
 		
-		log.info("ReimbursementService trying to find reimb by user id. " + user);
+		log.info("ReimbursementService trying to find reimb by user id. " );
 		return reimbDao.findReimbursementByUserId(user);
 	}
-	
 	
 	
 

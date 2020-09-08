@@ -1,3 +1,4 @@
+
 package com.revature.services;
 
 
@@ -27,11 +28,11 @@ public class LoginService {
 
 		if(loginDto.username.equals(user.getUserName()) && hashedPWFromClient.equals(user.getPassword())) {
 			
-			log.info("LoginService authentication successed. User Logged in." + user);
+			log.info("LoginService authentication successed. User Logged in.");
 			return true;
 		}
 		
-		log.error("LoginService authentication failed. User loggede in " + user);
+		log.error("LoginService authentication failed. User loggede in ");
 		return false;
 	}
 

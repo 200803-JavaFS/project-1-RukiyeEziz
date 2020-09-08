@@ -25,7 +25,7 @@ public class UserService {
 	
 	public Users findUserByNamePW(String username, String password) {
 			
-		log.info("In UserService looking for user name and pw ... " + username + " " + password);	
+		log.info("In UserService looking for user name and pw ... " + username);	
 		return userDao.findUserByNamePW(username, password);
 		
 	}
@@ -41,14 +41,15 @@ public class UserService {
 	}
 	
 	public boolean addUser(Users user) {
-		log.info("In UserService adding the user. " + user);
 		
+		log.info("In UserService adding the user. " + user);		
 		String hashedPW = getHashSHA1(user.getPassword());
 		user.setPassword(hashedPW);
 		return userDao.addUser(user);
 	}
 	
 	public boolean updateUser(Users user) {
+		
 		log.info("In UserService updating the user. " + user);
 		return userDao.updateUser(user);
 	}
@@ -72,7 +73,6 @@ public class UserService {
 		}
 	}
 	//////////////////////////////
-
 	
 	
 }
