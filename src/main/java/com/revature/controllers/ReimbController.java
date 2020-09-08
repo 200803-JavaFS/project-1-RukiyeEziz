@@ -110,37 +110,7 @@ public class ReimbController {
 			} else {
 				res.setStatus(403);
 			}
-			
-//			double amount= rdto.getReimbAmount();				
-//			Timestamp ts= new Timestamp(System.currentTimeMillis());			
-//			String description = rdto.getReimbDescription();
-//			Users author = us.findUserByUserId(rdto.getReimbAuthor().getUsersId());
-//			ReimbStatus rnewStatus= rss.findReimbStatus("Pending");		
-//			String type = rdto.getReimbTypeFK().getReimbType();
-//			System.out.println(type);
-//			
-//			ReimbType rt=null;
-//			if (type.equals("Lodging")) {
-//				rt=typeS.findByType("Lodging");
-//			}else if (type.equals("Travel")) {
-//				rt=typeS.findByType("Travel");
-//			}else if (type.equals("Food")) {
-//				rt=typeS.findByType("Food");
-//			}else if (type.equals("Other")) {
-//				rt=typeS.findByType("Other");
-//			}
-//			//create new reimbursement with constructor
-//			Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);
-//			System.out.println(addedReimb);
-//
-//			if(rs.addReimbursement(addedReimb)) {
-//				//add to database
-//				res.setStatus(200);
-//				res.getWriter().println("Reimbursement was created");
-//			}else {
-//				res.setStatus(403);
-//			}
-		
+					
 		}
 	
 
@@ -205,3 +175,34 @@ public class ReimbController {
 		
 }
 
+
+
+//double amount= rdto.getReimbAmount();				
+//Timestamp ts= new Timestamp(System.currentTimeMillis());			
+//String description = rdto.getReimbDescription();
+//Users author = us.findUserByUserId(rdto.getReimbAuthor().getUsersId());
+//ReimbStatus rnewStatus= rss.findReimbStatus("Pending");		
+//String type = rdto.getReimbTypeFK().getReimbType();
+//System.out.println(type);
+//
+//ReimbType rt=null;
+//if (type.equals("Lodging")) {
+//	rt=typeS.findByType("Lodging");
+//}else if (type.equals("Travel")) {
+//	rt=typeS.findByType("Travel");
+//}else if (type.equals("Food")) {
+//	rt=typeS.findByType("Food");
+//}else if (type.equals("Other")) {
+//	rt=typeS.findByType("Other");
+//}
+////create new reimbursement with constructor
+//Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);
+//System.out.println(addedReimb);
+//
+//if(rs.addReimbursement(addedReimb)) {
+//	//add to database
+//	res.setStatus(200);
+//	res.getWriter().println("Reimbursement was created");
+//}else {
+//	res.setStatus(403);
+//}

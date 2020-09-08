@@ -43,7 +43,7 @@ public class LoginController {
 		loginDto.password = password;
 		
 		System.out.println(" 2 -- In LoginController loginDTO.name;  " + loginDto.username + " " + loginDto.password);
-		System.out.println(" 3 -- In LoginController request.getContent: " + req.getContentType() );// .getParameterMap().containsKey("username"));
+		System.out.println(" 3 -- In LoginController request.getContent: " + req.getContentType() );
 
 		RequestDispatcher rd = null;
 		//PrintWriter out = res.getWriter();		

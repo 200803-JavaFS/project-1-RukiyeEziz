@@ -120,8 +120,8 @@ public class ServiceLayerTest {
 		
 		Timestamp timestamp1 = new Timestamp(System.currentTimeMillis());
 		ReimbursementDTO r3 = new ReimbursementDTO(333.33, timestamp1, null, "junit testing", null, 3, 1, 2, 4); 
-		//boolean goodReimb = reimbService.addReimbursement(r3);
-		//assertTrue(goodReimb);
+		boolean goodReimb = reimbService.addReimbursement(r3);
+		assertTrue(goodReimb);
 		
 		
 		int reimbId= 2;

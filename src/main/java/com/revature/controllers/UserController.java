@@ -20,6 +20,7 @@ public class UserController {
 	private static UserService userService = new UserService();
 	//private static UserRoleService userRoleService = new UserRoleService();
 	//ObjectMapper provides functionality for reading and writing JSON
+	
 	private static ObjectMapper objectMapper = new ObjectMapper();	
 	
 	public void getUserByNamePw(HttpServletResponse res, String username, String password) throws ServletException, IOException{
@@ -41,6 +42,20 @@ public class UserController {
 		}
 	}
 	
+	public void setUserRole(HttpServletRequest req, HttpServletResponse res, Users user) throws IOException {
+		
+		System.out.println("in method to sent user role as object");		
+		if( user == null) {
+			res.setStatus(204);
+		}else {
+			res.setStatus(200);
+			String json = objectMapper.writeValueAsString(user);
+			log.info("user controller json" + json);
+			res.getWriter().println(json);
+		}
+		
+	}
+
 //	public void getUserRole(HttpServletRequest req, HttpServletResponse res, int urid) throws IOException {
 //		
 //		UserRoles userRole = userRoleService.findByUserRoleId(urid);
@@ -58,19 +73,6 @@ public class UserController {
 //	}
 //	
 	
-	public void setUserRole(HttpServletRequest req, HttpServletResponse res, Users user) throws IOException {
-		//Hibernate.initialize(u.getUserRole());
-		System.out.println("in method to sent user role as object");		
-		if( user == null) {
-			res.setStatus(204);
-		}else {
-			res.setStatus(200);
-			String json = objectMapper.writeValueAsString(user);
-			log.info("user controller json" + json);
-			res.getWriter().println(json);
-		}
-		
-	}
 
 	
 	
