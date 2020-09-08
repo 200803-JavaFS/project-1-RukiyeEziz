@@ -237,7 +237,7 @@ async function updateReimbursement() {
         if (resp.status === 201) {
             document.getElementById("admin_home_warning").style.display = 'block';
             document.getElementById("admin_home_warning").style.color = 'green';
-            document.getElementById("admin_home_warning").innerText = "*** Reimbursement successfully updated."
+            document.getElementById("admin_home_warning").innerText = "*** Reimbursement successfully updated.";
             document.getElementById("reimb_tbody").innerText = "";
             allReimbs();
 

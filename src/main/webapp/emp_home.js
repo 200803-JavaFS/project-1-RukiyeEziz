@@ -152,13 +152,18 @@ async function addNewReimb() {
     });
 
     if (resp.status === 201) {
+        document.getElementById("emp_home_warning").style.display = 'block';
+        document.getElementById("emp_home_warning").style.color = 'green';
+        document.getElementById("emp_home_warning").innerText = "*** Reimbursement successfully added.";
+
         empReimbs();
         cancelInputs();
     }
     else {
         var warning = document.getElementById("emp_home_warning");
         warning.style.display = 'block';
-        warning.innerText = "*** Invalid input values. Re-enter again...";
+        warning.style.color = 'red';
+;        warning.innerText = "*** Invalid input values. Re-enter again...";
         //console.log("something went wrong");
     }
 
@@ -179,13 +184,13 @@ function cancelInputs() {
     typeInput.value = "0";
     descrptionInput.value = "";
     amountInput.value = 0.00;
-
+/*
     var warning = document.getElementById("emp_home_warning");
     if (warning.style.display == 'block') {
         warning.style.display = 'none';
         warning.innerText = "";
     }   
-
+*/
 }
 
 function convertTimestampToDate(ts) {
