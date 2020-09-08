@@ -12,6 +12,7 @@ import com.revature.daos.IUserDAO;
 import com.revature.daos.UserDAO;
 import com.revature.models.Users;
 
+
 public class UserService {
 	
 	private static final Logger log = LogManager.getLogger(UserService.class);
@@ -41,6 +42,9 @@ public class UserService {
 	
 	public boolean addUser(Users user) {
 		log.info("In UserService adding the user. " + user);
+		
+		String hashedPW = getHashSHA1(user.getPassword());
+		user.setPassword(hashedPW);
 		return userDao.addUser(user);
 	}
 	
@@ -48,6 +52,27 @@ public class UserService {
 		log.info("In UserService updating the user. " + user);
 		return userDao.updateUser(user);
 	}
+	
+	//////////////////////////
+	private static String getHashSHA1(String pw) {
+		try {
+			MessageDigest md = MessageDigest.getInstance("SHA-1");
+			md.update(pw.getBytes());
+			byte byteData[] = md.digest();
+			StringBuilder sb = new StringBuilder();
+			for(int i = 0; i < byteData.length; i++) {
+			sb.append(Integer.toString(
+			(byteData[i] & 0xff) + 0x100, 16).substring(1));
+			
+		}
+			return sb.toString();
+		}catch(NoSuchAlgorithmException ex) {
+			System.out.println("something went wrong with pw hashing.");
+			return null;
+		}
+	}
+	//////////////////////////////
+
 	
 	
 }

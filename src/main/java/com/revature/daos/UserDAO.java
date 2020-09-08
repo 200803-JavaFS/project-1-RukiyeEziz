@@ -70,8 +70,7 @@ public class UserDAO implements IUserDAO {
 	public boolean addUser(Users user) {
 		Session session = HibernateUtil.getSession();
 		
-		try {
-			
+		try {			
 			session.save(user);
 			log.info("User DAO added the user .....");
 			return true;

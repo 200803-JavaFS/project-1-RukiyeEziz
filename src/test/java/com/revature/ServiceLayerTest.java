@@ -6,11 +6,22 @@ import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.sql.Date;
+import java.sql.Timestamp;
+import java.util.List;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.revature.daos.ReimbStatusDAO;
+import com.revature.daos.ReimbTypeDAO;
+import com.revature.daos.ReimbursementDAO;
+import com.revature.daos.UserDAO;
 import com.revature.models.LoginDTO;
 import com.revature.models.ReimbStatus;
+import com.revature.models.ReimbType;
+import com.revature.models.Reimbursement;
+import com.revature.models.ReimbursementDTO;
 import com.revature.models.UserRoles;
 import com.revature.models.Users;
 import com.revature.services.LoginService;
@@ -22,6 +33,11 @@ import com.revature.services.UserService;
 public class ServiceLayerTest {
 	
 	public static LoginDTO loginDto;
+	public static ReimbursementDTO rDto;
+	public static UserDAO uDAO = new UserDAO();
+	public static ReimbursementDAO rDAO = new ReimbursementDAO();
+	private static ReimbStatusDAO rsDao = new ReimbStatusDAO();
+	private static ReimbTypeDAO rtDao = new ReimbTypeDAO();
 	public static LoginService loginService;
 	public static UserService userService;
 	public static UserRoleService userRoleService;
@@ -80,7 +96,35 @@ public class ServiceLayerTest {
 		
 		Users u6 = userService.findUserByUserId(10);
 		assertNull(u6);
+			
+		UserRoles ur1 = userRoleService.findByUserRoleId(2);
+		Users u7 = new Users("amanda", "amanda", "Amanda", "Ugartecha", "junitTest@gmail.com", ur1);
+		boolean success = userService.addUser(u7);
+		assertTrue(success);
 		
+		
+		
+	}
+	
+	@Test
+	public void testReimbursementService() {
+		List<Reimbursement> list1 = reimbService.findAllReimb();
+		assertTrue(list1 != null);
+		
+		Reimbursement r1 = reimbService.findByReimbId(1);
+		assertNotNull(r1);
+		
+		Reimbursement r2 = reimbService.findByReimbId(5);
+		assertNull(r2);
+		
+		Timestamp timestamp1 = new Timestamp(System.currentTimeMillis());
+		ReimbursementDTO r3 = new ReimbursementDTO(111.11, timestamp1, timestamp1, "testing", null, 3, 1, 2, 4); 
+//		boolean goodReimb = reimbService.addReimbursement(r3);
+//		assertTrue(goodReimb);
+		
+		Users u1 = userService.findUserByUserId(2);
+		List<Reimbursement> list2 = reimbService.findReimbursementByUserId(u1);
+		assertTrue(list2 != null);
 		
 		
 	}

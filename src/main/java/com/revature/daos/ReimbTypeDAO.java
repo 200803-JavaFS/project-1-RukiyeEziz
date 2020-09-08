@@ -17,12 +17,14 @@ public class ReimbTypeDAO implements IReimbTypeDAO {
 		
 		return type;
 	}
+	
 	@Override
 	public ReimbType findReimbTypeByType(String type) {
 		Session ses = HibernateUtil.getSession();
 		List<ReimbType> list = (List<ReimbType>) ses.createQuery("FROM ReimbType WHERE reimbType='"+type+"'", ReimbType.class).list();
 		return list.get(0);
 	}
+	
 	@Override
 	public List<ReimbType> findReimbTypeByUserId(int userid) {
 		

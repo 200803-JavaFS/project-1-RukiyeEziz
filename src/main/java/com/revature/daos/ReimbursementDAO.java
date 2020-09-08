@@ -78,7 +78,6 @@ public class ReimbursementDAO implements IReimbursementDAO {
 	public List<Reimbursement> findReimbursementByStatus(int statusid) {
 		Session session = HibernateUtil.getSession();
 		
-		//????????????????
 		List<Reimbursement> list = session.createQuery("FROM Reimbursement WHERE reimbStatusFK = " + statusid, Reimbursement.class).list();
 		log.info("reimbursement DAO find remib by status id. " + list);
 		return list;
@@ -94,10 +93,9 @@ public class ReimbursementDAO implements IReimbursementDAO {
 	}
 
 	
-	
-	
-
 }
+
+
 
 //@Override
 //public List<Reimbursement> findAllReimb() {

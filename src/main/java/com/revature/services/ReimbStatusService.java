@@ -17,6 +17,7 @@ public class ReimbStatusService {
 		log.info("Reimb status service by status " + status);
 		return rsDao.findReimbStatus(status);
 	}
+	
 	public ReimbStatus findReimbStatusById(int statusid) {
 		
 		log.info("Reimb status service by status " + statusid);

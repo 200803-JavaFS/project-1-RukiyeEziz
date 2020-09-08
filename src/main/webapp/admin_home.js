@@ -9,7 +9,7 @@ const url2 = "http://localhost:8080/project1/manager/";
 var receivingData = sessionStorage.getItem("Lucifer");
 receivingData = JSON.parse(receivingData);
 
-console.log("receiving data: " + receivingData);
+//console.log("receiving data: " + receivingData);
 
 var fName = receivingData.firstName;
 document.getElementById('profile_name').innerText = fName;
@@ -18,14 +18,13 @@ var logoutBtn = document.getElementById('logout_btn');
 logoutBtn.addEventListener("click", logout);
 
 let userId = receivingData.usersId;
-console.log("user id " + userId);
+//console.log("user id " + userId);
 
 allReimbs();
 
 var REIMB_ID;
 var REIMB_STATUS;
 
-//updateReimbDetails();
 
 let submitBtn = document.getElementById("submit_reimb_btn");
 submitBtn.addEventListener("click", updateReimbursement);
@@ -34,14 +33,14 @@ let cancelBtn = document.getElementById("cancel_btn");
 cancelBtn.addEventListener("click", cancelInputs);
 
 async function allReimbs() {
-    console.log("in all reimbs function ");
+    //console.log("in all reimbs function ");
 
     let resp = await fetch(url2, {
         credentials: 'include'
     })
         .then(resp => resp.json())
         .then(data => {
-            console.log(data);
+            //console.log(data);
 
             document.getElementById("reimb_tbody").innerText = "";
 
@@ -51,15 +50,12 @@ async function allReimbs() {
                 var tsResolved;
                 var fResolved;
                 if (resolved) {
-                    //tsResolved = new Date(resolved);
-                    //fResolved = ("0" + (tsResolved.getMonth() + 1)).slice(-2) + '/' + ("0" + tsResolved.getDate()).slice(-2) + '/' + tsResolved.getFullYear();
                     fResolved = convertTimestampToDate(resolved);
                 }
                 else {
                     fResolved = "";
                 }
-                //var tsSubmitted = new Date(submitted);
-                //var fSubmitted = ("0" + (tsSubmitted.getMonth() + 1)).slice(-2) + '/' + ("0" + tsSubmitted.getDate()).slice(-2) + '/' + tsSubmitted.getFullYear();
+                
                 var fSubmitted = convertTimestampToDate(submitted);
 
                 let row = document.createElement("tr");
@@ -87,10 +83,9 @@ async function allReimbs() {
             }
 
             myFunction();
-            console.log("reimb id = " + REIMB_ID);
-            console.log("reimb status " + REIMB_STATUS);
+            //console.log("reimb id = " + REIMB_ID);
+            //console.log("reimb status " + REIMB_STATUS);
             
-
         }).catch((error) => {
 
             console.log("Couldn't add the data to the tbody");
@@ -119,16 +114,13 @@ function myFunction() {
             if (typeof index !== "undefined") {
                 tbl.rows[index].classList.toggle("selected");
             }
-            console.log(" type of row index " + typeof index);
+            //console.log(" type of row index " + typeof index);
 
             // get the selected row index
             index = this.rowIndex;
             // add class selected to the row
             this.classList.toggle("selected");
-
-
-            console.log(typeof index);
-
+           // console.log(typeof index);
 
             var msg = "i am clicking : "
             var rowsNotSelected = tbl.getElementsByTagName('tr');
@@ -144,7 +136,7 @@ function myFunction() {
                 
                 
             }
-            console.log(msg);
+            //console.log(msg);
             console.log("the row i clicked reimb id = " + this.cells[0].innerHTML);
             REIMB_ID = this.cells[0].innerHTML;
             console.log("the row i clicked reimb status = " + this.cells[1].innerHTML);
@@ -181,7 +173,7 @@ async function updateReimbView(id, status) {
     })
         .then(resp => resp.json())
         .then(data => {
-            console.log("reimb data " + data);
+            //console.log("reimb data " + data);
 
             if (data.reimbStatusFK.reimbStatus == "Approved") {
                 document.getElementById("admin_home_warning").style.display = 'block';
@@ -200,17 +192,6 @@ async function updateReimbView(id, status) {
 
             }
 
-           
-            
-
-            //console.log("option status " + statusOption);
-
-
-            
-            
-
-
-
         }).catch((error) => {
             console.log("Couldn't add the data to the tbody");
     }); 
@@ -220,13 +201,13 @@ async function updateReimbView(id, status) {
 
 async function updateReimbursement() {
     
-    console.log("updating reimb ");
+    //console.log("updating reimb ");
     var id = document.getElementById("reimb_id").value;
     var reimbid = id;
 
     var status = document.getElementById("reimb_status");
     let statusOption = status.options[status.selectedIndex].value;
-    console.log("statusOption " + statusOption);
+    //console.log("statusOption " + statusOption);
     var reimbstatus = statusOption;
 
     console.log("user id = " + userId + " reimb id = " + reimbid + " going to update status to =  " + reimbstatus);
@@ -245,7 +226,7 @@ async function updateReimbursement() {
             reimbStatusFK: reimbstatus
         }
 
-        console.log("updateReimbJason " + updateReimbJason);
+        //console.log("updateReimbJason " + updateReimbJason);
 
         let resp = await fetch(url + "manager/", {
             method: 'POST',
@@ -265,9 +246,8 @@ async function updateReimbursement() {
 
     }
 
-
-    
 }
+
 function cancelInputs() {
     console.log("cancel inputsss");
     document.getElementById("reimb_id").value="";
@@ -297,15 +277,15 @@ async function logout() {
     if (resp.status === 200) {
         console.log("log out ...");
         window.location.replace("login.html");
-        //window.alert("You are trying to log out. Are you sure?");
+      
     }
 }
 
 function convertTimestampToDate(ts) {
-    console.log(ts);
+    //console.log(ts);
     var tsDate = new Date(ts);
     var formattedDate = ("0" + (tsDate.getMonth() + 1)).slice(-2) + '/' + ("0" + tsDate.getDate()).slice(-2) + '/' + tsDate.getFullYear();
-    console.log(formattedDate);
+    //console.log(formattedDate);
     return formattedDate;
 
 

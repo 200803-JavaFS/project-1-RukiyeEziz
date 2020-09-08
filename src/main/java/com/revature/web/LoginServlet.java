@@ -56,8 +56,7 @@ public class LoginServlet extends HttpServlet{
 			System.out.println(" in if portions.length ...");
 			req.getRequestDispatcher("index.html").forward(req, res);		
 		}
-		
-		
+				
 		try {
 			
 			switch(portions[0]) {

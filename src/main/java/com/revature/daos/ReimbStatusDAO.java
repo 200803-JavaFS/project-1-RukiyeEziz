@@ -44,11 +44,9 @@ public class ReimbStatusDAO implements IReimbStatusDAO {
 		return status;
 	}
 
-
-
-
-
 }
+
+
 /*  example user id = 2  (findReimbStatusByUserId)
 
 	1	666.66	2020-08-23 11:22:46		travel cost				2(user id)	3	2	3	Pending

@@ -24,16 +24,12 @@ public class UserRolesDAO implements IUserRoleDAO {
 		return userRole;
 		
 	}
+	
 	@Override
 	public UserRoles findUserRoleByUserId(int userid) {
-		System.out.println("find user role by user id isnt implemented");
-		
+		System.out.println("find user role by user id isnt implemented");		
 		return null;
 	}
-
-
-
-
 
 }
 

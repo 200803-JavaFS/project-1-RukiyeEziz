@@ -28,8 +28,8 @@ public class ReimbursementService {
 	private static IUserDAO uDao = new UserDAO();
 	private static IReimbStatusDAO rsDao = new ReimbStatusDAO();
 	private static IReimbTypeDAO rtDao = new ReimbTypeDAO();
-	
-	
+
+
 	public List<Reimbursement> findAllReimb(){
 		
 		log.info("ReimbursementService trying to find all reimb.");
@@ -48,8 +48,7 @@ public class ReimbursementService {
 		Users auth = uDao.findUserById(rDto.reimbAuthor);
 		Users reslvr = uDao.findUserById(rDto.reimbResolver);
 		ReimbStatus status = rsDao.findReimbStatus(rDto.reimbStatusFK);
-		ReimbType type = rtDao.findReimbType(rDto.reimbTypeFK);
-		
+		ReimbType type = rtDao.findReimbType(rDto.reimbTypeFK);		
 		
 		reimb = new Reimbursement(rDto.reimbAmount, rDto.reimbSubmitted, rDto.reimbResolved, rDto.reimbDescription, rDto.reimbReceipt, auth, reslvr, status, type); 
 		

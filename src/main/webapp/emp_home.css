@@ -132,9 +132,11 @@ table {
     font-size: 14px;
     font-family: Ek Mukta;
 }
+
 #detail_block {
     display: none;
 }
+
 #create_new_btn {
     border: 1px solid #d8dde6;
     background-color: #f26925; /* orange */
@@ -154,6 +156,7 @@ table {
     margin: 16px 0 0 16px;
     cursor: pointer;
 }
+
 #cancel_btn {
     border: 1px solid #d8dde6;
     background-color: white; /* orange */
@@ -162,22 +165,27 @@ table {
     margin: 16px 0 0 16px;
     cursor: pointer;
 }
+
 .remib_detail_table {
     border: 1px solid #d8dde6;
     font-family: Ek Mukta;
     font-size: 14px;
     padding: 0 1rem 1rem 1rem;
 }
+
 #type_label, #description_label, #amount_label, #date_label {
     padding-left: 30px;
 }
+
 #reimb_amount {
 
     padding: .375rem .75rem;
 }
+
 #reimb_date{
     padding: 8px;
 }
+
 #emp_home_warning {
     color: red;
     font-size: 12px;

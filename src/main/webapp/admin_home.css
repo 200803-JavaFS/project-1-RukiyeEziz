@@ -86,7 +86,6 @@ body {
   text-decoration: none;
 }
 
-
 /* *******************   tables  ******************** */
 
 table {
@@ -147,37 +146,6 @@ tr {
     font-weight: bold;
     font-size: 16px;
 }
-
-        /*   
-#home_reimb_table {
-    display: block;
-    empty-cells: show;
-}
-    #home_reimb_table tbody {
-        display: block;
-        position: relative;
-        width: 100%;
-        overflow-y: scroll;
-    }
-
-    #home_reimb_table thead {
-        display: block;
-        width: 100%;
-        overflow-y: scroll;
-    }
-    #home_reimb_table tr {
-        width: 100%;
-        display: flex;
-    }
-    #home_reimb_table td, #home_reimb_table th {
-        flex-basis: 100%;
-        flex-grow: 2;
-        display: block;
-        padding: 1rem;
-        text-align: left;
-    }
-
-    */
 
 #submit_reimb_btn {
     border: 1px solid #d8dde6;
