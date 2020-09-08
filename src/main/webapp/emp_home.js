@@ -119,8 +119,6 @@ async function addNewReimb() {
 
     console.log("user id " + userId);
 
-    
-
     let amountInput = document.getElementById("reimb_amount").value;
     let descrptionInput = document.getElementById("reimb_desc").value;
     let typeInput = document.getElementById("reimb_option");
@@ -197,6 +195,7 @@ function cancelInputs() {
    
 
 }
+
 function convertTimestampToDate(ts) {
     console.log(ts);
     var tsDate = new Date(ts);
@@ -206,12 +205,7 @@ function convertTimestampToDate(ts) {
     
 
 }
-/*
-function toTimestamp(date) {
-    var d= new Date(Date.UTC(date));
-    return d.getTime() / 1000;
-}
-*/
+
 async function logout() {
 
     let resp = await fetch(url + "logout", {

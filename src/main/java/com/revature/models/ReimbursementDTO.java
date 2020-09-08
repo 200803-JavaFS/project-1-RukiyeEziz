@@ -51,6 +51,87 @@ public class ReimbursementDTO {
 		this.reimbTypeFK = reimbTypeFK;
 	}
 
+	
+	public int getReimbId() {
+		return reimbId;
+	}
+
+	public void setReimbId(int reimbId) {
+		this.reimbId = reimbId;
+	}
+
+	public double getReimbAmount() {
+		return reimbAmount;
+	}
+
+	public void setReimbAmount(double reimbAmount) {
+		this.reimbAmount = reimbAmount;
+	}
+
+	public Timestamp getReimbSubmitted() {
+		return reimbSubmitted;
+	}
+
+	public void setReimbSubmitted(Timestamp reimbSubmitted) {
+		this.reimbSubmitted = reimbSubmitted;
+	}
+
+	public Timestamp getReimbResolved() {
+		return reimbResolved;
+	}
+
+	public void setReimbResolved(Timestamp reimbResolved) {
+		this.reimbResolved = reimbResolved;
+	}
+
+	public String getReimbDescription() {
+		return reimbDescription;
+	}
+
+	public void setReimbDescription(String reimbDescription) {
+		this.reimbDescription = reimbDescription;
+	}
+
+	public Byte[] getReimbReceipt() {
+		return reimbReceipt;
+	}
+
+	public void setReimbReceipt(Byte[] reimbReceipt) {
+		this.reimbReceipt = reimbReceipt;
+	}
+
+	public int getReimbAuthor() {
+		return reimbAuthor;
+	}
+
+	public void setReimbAuthor(int reimbAuthor) {
+		this.reimbAuthor = reimbAuthor;
+	}
+
+	public int getReimbResolver() {
+		return reimbResolver;
+	}
+
+	public void setReimbResolver(int reimbResolver) {
+		this.reimbResolver = reimbResolver;
+	}
+
+	public int getReimbStatusFK() {
+		return reimbStatusFK;
+	}
+
+	public void setReimbStatusFK(int reimbStatusFK) {
+		this.reimbStatusFK = reimbStatusFK;
+	}
+
+	public int getReimbTypeFK() {
+		return reimbTypeFK;
+	}
+
+	public void setReimbTypeFK(int reimbTypeFK) {
+		this.reimbTypeFK = reimbTypeFK;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

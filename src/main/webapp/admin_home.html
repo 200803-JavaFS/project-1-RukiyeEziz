@@ -53,12 +53,62 @@
             <div id="manage_blcok">
                 <div id="mng_table_name_div">Manage Reimbursement Detail</div>
 
+                <div class="remib_detail_table">
+
+                    <div class="form-group row">
+
+                        <label for="reimb_id" class="col-sm-4 mt-4" id="id_label">Reimbursement ID:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext " id="reimb_id">
+                        </div>
+
+                        <label for="reimb_amount" class="col-sm-4 mt-4" id="id_label">Reimbursement Amount:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext " id="reimb_amount">
+                        </div>
+
+                        <label for="reimb_date" class="col-sm-4 mt-4" id="date_label">Created Date:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext" id="reimb_date">
+                        </div>
+
+                        <label for="reimb_type" class="col-sm-4 mt-4" id="type_label">Reimbursement Type:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext" id="reimb_type">
+                        </div>
+
+                        <label for="reimb_desc" class="col-sm-4 mt-4" id="description_label">Description:</label>
+                        <div class="col-sm-6">
+                            <input type="text" readonly class="form-control-plaintext" id="reimb_desc">
+                        </div>
+
+                        <label for="reimb_status" class="col-sm-4 mt-4 col-form-label" id="status_label">Select Status:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control " id="reimb_status">
+                                <option value="0">---</option>
+                                <option value="1">Approved</option>
+                                <option value="2">Denied</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <button id="submit_reimb_btn">Submit</button>
+                        </div>
+                        <div class="col-sm-2">
+                            <button id="cancel_btn">Cancel</button>
+                        </div>
+                        <div id="admin_home_warning"></div>
+                    </div>
+                    
+                </div>
             </div>
 
         </article>
 
 
     </div><!-- end of flex-main -->
+
     <!-- footer -->
     <footer class="flex-footer">
         CONTACT US: HR@revature.com

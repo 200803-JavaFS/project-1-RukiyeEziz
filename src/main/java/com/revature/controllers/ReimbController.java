@@ -142,6 +142,65 @@ public class ReimbController {
 //			}
 		
 		}
+	
+	
+	public void updateReimbursement(HttpServletRequest req, HttpServletResponse res) throws IOException {
+		
+		BufferedReader reader = req.getReader();
+		
+		StringBuilder sb = new StringBuilder();
+		
+		String line = reader.readLine();
+		
+		while(line!=null) {
+			
+			sb.append(line);
+			
+			line = reader.readLine();
+		}
+		
+		String body = new String(sb);
+		
+		ReimbursementDTO rdto= om.readValue(body, ReimbursementDTO.class);
+		
+		System.out.println("json body that is came from java font end "+ rdto);
+		
+		
+		int reimbId= rdto.getReimbId();
+		Reimbursement reimb = rs.findByReimbId(reimbId); 
+		
+		int status= rdto.getReimbStatusFK(); 
+		System.out.println("new status:" +status);
+		
+		ReimbStatus rStatus = null;
+		if (status == 1) {
+			rStatus= new ReimbStatus(1,"Approved");
+		}else if (status == 2) {
+			rStatus= new ReimbStatus(2, "Denied");
+		}
+		
+		int resolverId= rdto.getReimbResolver();
+		System.out.println("resolver id: "+ resolverId);
+		
+		
+		reimb.setReimbStatusFK(rStatus);
+		reimb.setReimbResolved(new Timestamp(System.currentTimeMillis()));
+		
+		Users resolver= us.findUserByUserId(resolverId);
+		System.out.println("resolver: " + resolver);
+		reimb.setReimbResolver(resolver);
+		
+		System.out.println(reimb);;
+		
+		if (rs.updateReimbursement(reimb)) {
+			res.setStatus(201);
+			res.getWriter().println("Reimbursement was updated");
+		}else {
+			res.setStatus(403);
+		}
+		
+	}
+
 		
 }
 

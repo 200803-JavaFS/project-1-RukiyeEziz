@@ -112,8 +112,7 @@ public class LoginServlet extends HttpServlet{
 				case "employee":
 					
 					System.out.println("in employee case ");
-					//System.out.println("portions[1]  " + portions[1]);
-					
+	
 					if(req.getMethod().equals("GET")) {
 						if(portions.length == 2) {
 							int userid = Integer.parseInt(portions[1]);
@@ -121,7 +120,7 @@ public class LoginServlet extends HttpServlet{
 						}	
 					}
 					else if(req.getMethod().equals("POST")){
-						//System.out.println("portions[0]  " + portions[0]);
+						
 						reimbController.addReimbursement(req, res);
 					}
 
@@ -129,11 +128,22 @@ public class LoginServlet extends HttpServlet{
 					///////////////////
 				case "manager":
 					System.out.println("manager case");
-					if(portions.length == 2) {
+					
+					if(req.getMethod().equals("GET")) {
 						
-					}else {
-						reimbController.getAllReimbursements(res);
+						if(portions.length == 2) {
+							int reimbid = Integer.parseInt(portions[1]);
+							reimbController.getReimbursement(res, reimbid);
+						}
+						else {
+							reimbController.getAllReimbursements(res);
+						}
+						
 					}
+					else if(req.getMethod().equals("POST")){
+						reimbController.updateReimbursement(req, res);
+					}
+					
 					break;
 					//////////////////
 				case "logout":
