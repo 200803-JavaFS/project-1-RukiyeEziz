@@ -32,10 +32,11 @@ import com.revature.services.UserService;
 
 public class ServiceLayerTest {
 	
-	public static LoginDTO loginDto;
-	public static ReimbursementDTO rDto;
-	public static UserDAO uDAO = new UserDAO();
-	public static ReimbursementDAO rDAO = new ReimbursementDAO();
+	
+	private static LoginDTO loginDto;
+	private static ReimbursementDTO rDto;
+	private static UserDAO uDAO = new UserDAO();
+	private static ReimbursementDAO rDAO = new ReimbursementDAO();
 	private static ReimbStatusDAO rsDao = new ReimbStatusDAO();
 	private static ReimbTypeDAO rtDao = new ReimbTypeDAO();
 	public static LoginService loginService;
@@ -118,14 +119,27 @@ public class ServiceLayerTest {
 		assertNull(r2);
 		
 		Timestamp timestamp1 = new Timestamp(System.currentTimeMillis());
-		ReimbursementDTO r3 = new ReimbursementDTO(111.11, timestamp1, timestamp1, "testing", null, 3, 1, 2, 4); 
-//		boolean goodReimb = reimbService.addReimbursement(r3);
-//		assertTrue(goodReimb);
+		ReimbursementDTO r3 = new ReimbursementDTO(333.33, timestamp1, null, "junit testing", null, 3, 1, 2, 4); 
+		//boolean goodReimb = reimbService.addReimbursement(r3);
+		//assertTrue(goodReimb);
+		
+		
+		int reimbId= 2;
+		Reimbursement reimb = reimbService.findByReimbId(reimbId); 
+		int status= 2; //denied
+		ReimbStatus rStatus = new ReimbStatus(2, "Denied");		
+		int resolverId = 1;
+		Users resolver= userService.findUserByUserId(resolverId);		
+		reimb.setReimbStatusFK(rStatus);
+		reimb.setReimbResolved(new Timestamp(System.currentTimeMillis()));
+		reimb.setReimbResolver(resolver);
+		boolean goodUpdate = reimbService.updateReimbursement(reimb);
+		assertTrue(goodUpdate);
+		
 		
 		Users u1 = userService.findUserByUserId(2);
 		List<Reimbursement> list2 = reimbService.findReimbursementByUserId(u1);
-		assertTrue(list2 != null);
-		
+		assertTrue(list2 != null);		
 		
 	}
 	
